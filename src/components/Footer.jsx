@@ -10,9 +10,7 @@ export default function Footer({ content }) {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-start">
             <h3 className="text-white font-semibold text-lg">{t(company.name)}</h3>
-            <p className="text-slate-400 text-sm mt-1">
-              {t(company.tagline)}
-            </p>
+            <p className="text-slate-400 text-sm mt-1">{t(company.tagline)}</p>
           </div>
           <div className="text-slate-500 text-sm">
             {new Date().getFullYear()} {t({ en: 'All rights reserved.', ar: 'جميع الحقوق محفوظة.', zh: '版权所有。' })}

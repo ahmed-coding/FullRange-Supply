@@ -2,58 +2,28 @@ import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
-const defaultLabels = {
-  clients: { en: 'Global Clients', ar: 'عملاء حول العالم', zh: '全球客户' },
-  factories: { en: 'Partner Factories', ar: 'مصانع شريكة', zh: '合作工厂' },
-  shipments: { en: 'Shipments Completed', ar: 'شحنات مكتملة', zh: '已完成货运' },
-  countries: { en: 'Countries Served', ar: 'بلدان', zh: '服务国家' },
-  aboutTitle: { en: 'Your Trusted China Sourcing Partner', ar: 'شريكك الموثوق في التوريد من الصين', zh: '您值得信赖的中国采购合作伙伴' },
-  aboutDesc: { en: 'With deep roots in China manufacturing hubs, we bridge the gap between global buyers and trusted suppliers.', ar: 'جذورنا عميقة في مراكز التصنيع الصينية', zh: '我们深耕中国制造中心' },
-  reliability: { en: 'Reliability First', ar: 'الموثوقية اولا', zh: '诚信至上' },
-  quality: { en: 'Quality Guaranteed', ar: 'الجودة مضمونة', zh: '质量保证' },
-  reach: { en: 'Global Reach', ar: 'الانتشار العالمي', zh: '全球覆盖' }
-};
-
 function AnimatedCounter({ value }) {
   const [displayValue, setDisplayValue] = useState(0);
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
+    const observer = new IntersectionObserver(([entry]) => { if (entry.isIntersecting) setIsVisible(true); }, { threshold: 0.5 });
+    if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
     if (!isVisible) return;
-
     const duration = 2000;
     const steps = 60;
     const increment = value / steps;
     let current = 0;
-
     const timer = setInterval(() => {
       current += increment;
-      if (current >= value) {
-        setDisplayValue(value);
-        clearInterval(timer);
-      } else {
-        setDisplayValue(Math.floor(current));
-      }
+      if (current >= value) { setDisplayValue(value); clearInterval(timer); }
+      else { setDisplayValue(Math.floor(current)); }
     }, duration / steps);
-
     return () => clearInterval(timer);
   }, [value, isVisible]);
 
@@ -63,61 +33,40 @@ function AnimatedCounter({ value }) {
 export default function About({ content }) {
   const { t } = useLanguage();
   const stats = content?.stats || {};
-  
+  const section = content?.aboutSection || {};
+
   const statsArray = [
-    { key: 'clients', label: defaultLabels.clients },
-    { key: 'factories', label: defaultLabels.factories },
-    { key: 'shipments', label: defaultLabels.shipments },
-    { key: 'countries', label: defaultLabels.countries }
+    { key: 'clients', label: { en: 'Global Clients', ar: 'عملاء حول العالم', zh: '全球客户' } },
+    { key: 'factories', label: { en: 'Partner Factories', ar: 'مصانع شريكة', zh: '合作工厂' } },
+    { key: 'shipments', label: { en: 'Shipments Completed', ar: 'شحنات مكتملة', zh: '已完成货运' } },
+    { key: 'countries', label: { en: 'Countries Served', ar: 'بلدان', zh: '服务国家' } }
   ];
 
-  const values = [defaultLabels.reliability, defaultLabels.quality, defaultLabels.reach];
+  const values = [
+    { en: 'Reliability First', ar: 'الموثوقية اولا', zh: '诚信至上' },
+    { en: 'Quality Guaranteed', ar: 'الجودة مضمونة', zh: '质量保证' },
+    { en: 'Global Reach', ar: 'الانتشار العالمي', zh: '全球覆盖' }
+  ];
 
   return (
     <section className="py-24 bg-gradient-to-b from-[#0a1628] to-[#0f2744]">
       <div className="max-w-7xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <span className="text-[#d4af37] uppercase tracking-widest text-sm font-medium">
-            {t({ en: 'About Us', ar: 'من نحن', zh: '关于我们' })}
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-6">
-            {t(defaultLabels.aboutTitle)}
-          </h2>
-          <p className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
-            {t(defaultLabels.aboutDesc)}
-          </p>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-16">
+          <span className="text-[#d4af37] uppercase tracking-widest text-sm font-medium">{t({ en: 'About Us', ar: 'من نحن', zh: '关于我们' })}</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-6">{t(section.title)}</h2>
+          <p className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">{t(section.description)}</p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16"
-        >
+        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }} className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {statsArray.map((stat, index) => (
             <div key={index} className="text-center">
               <AnimatedCounter value={stats[stat.key] || 0} />
-              <p className="text-slate-400 mt-2 text-sm uppercase tracking-wider">
-                {t(stat.label)}
-              </p>
+              <p className="text-slate-400 mt-2 text-sm uppercase tracking-wider">{t(stat.label)}</p>
             </div>
           ))}
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-wrap justify-center gap-8"
-        >
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }} className="flex flex-wrap justify-center gap-8">
           {values.map((value, index) => (
             <div key={index} className="flex items-center gap-2 px-4 py-2 bg-[#d4af37]/10 rounded-full border border-[#d4af37]/20">
               <span className="w-2 h-2 rounded-full bg-[#d4af37]" />
