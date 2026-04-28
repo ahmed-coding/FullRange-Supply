@@ -1,122 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { LanguageProvider } from './context/LanguageContext';
+import Hero from './components/Hero';
+import Services from './components/Services';
+import About from './components/About';
+import Process from './components/Process';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import LanguageSwitcher from './components/LanguageSwitcher';
+import contentData from './data/content.json';
 
-function App() {
-  const [count, setCount] = useState(0)
+function Navbar() {
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a1628]/90 backdrop-blur-md border-b border-slate-800">
+      <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-8">
+            <a href="#" className="text-white font-bold text-xl">
+              AMZ<span className="text-[#d4af37]">.</span>
+            </a>
+            <div className="hidden md:flex items-center gap-6">
+              <button onClick={() => scrollToSection('services')} className="text-slate-300 hover:text-white transition-colors text-sm">
+                Services
+              </button>
+              <button onClick={() => scrollToSection('about')} className="text-slate-300 hover:text-white transition-colors text-sm">
+                About
+              </button>
+              <button onClick={() => scrollToSection('process')} className="text-slate-300 hover:text-white transition-colors text-sm">
+                Process
+              </button>
+              <button onClick={() => scrollToSection('contact')} className="text-slate-300 hover:text-white transition-colors text-sm">
+                Contact
+              </button>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher />
+          </div>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+      </div>
+    </nav>
+  );
 }
 
-export default App
+function App() {
+  const content = contentData.content || contentData;
+
+  return (
+    <LanguageProvider>
+      <div className="min-h-screen bg-[#0a1628]">
+        <Navbar />
+        <main className="pt-16">
+          <Hero content={content} />
+          <Services content={content} />
+          <About content={content} />
+          <Process content={content} />
+          <Contact content={content} />
+        </main>
+        <Footer content={content} />
+      </div>
+    </LanguageProvider>
+  );
+}
+
+export default App;

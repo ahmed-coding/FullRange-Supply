@@ -1,0 +1,181 @@
+{
+  "company": {
+    "name": {
+      "en": "AMZ Global Sourcing",
+      "ar": "AMZ للتوريد والتجارة العالمية",
+      "zh": "AMZ 全球采购与贸易"
+    },
+    "tagline": {
+      "en": "From China to the World — Smart Sourcing, Safe Trade",
+      "ar": "من الصين إلى العالم — توريد ذكي وتجارة آمنة",
+      "zh": "从中国到世界 — 智能采购，安全贸易"
+    },
+    "description": {
+      "en": "AMZ Global Sourcing is a professional trading and sourcing office based in China, helping global clients find reliable manufacturers, negotiate deals, ensure quality control, and manage international logistics efficiently.",
+      "ar": "مكتب احترافي للتوريد والتجارة من الصين، يساعد العملاء حول العالم في العثور على مصانع موثوقة وال التفاوض على الصفقات وضمان الجودة وادارة الشحن الدولي.",
+      "zh": "AMZ 是一家位于中国的专业采购与贸易公司，帮助全球客户寻找可靠制造商、谈判交易、确保质量并高效管理国际物流。"
+    }
+  },
+
+  "hero": {
+    "badge": {
+      "en": "Premium Sourcing Partner",
+      "ar": "شريك التوريد المميز",
+      "zh": "优质采购合作伙伴"
+    },
+    "ctaPrimary": {
+      "en": "Contact Us",
+      "ar": "اتصل بنا",
+      "zh": "联系我们"
+    },
+    "ctaSecondary": {
+      "en": "Our Services",
+      "ar": "خدماتنا",
+      "zh": "我们的服务"
+    }
+  },
+
+  "servicesSection": {
+    "title": {
+      "en": "Comprehensive Services",
+      "ar": "خدمات شاملة",
+      "zh": "综合服务"
+    },
+    "description": {
+      "en": "End-to-end solutions for your China sourcing needs",
+      "ar": "حلول شاملة لاحتياجات التوريد من الصين",
+      "zh": "一站式中国采购解决方案"
+    }
+  },
+
+  "aboutSection": {
+    "title": {
+      "en": "Your Trusted China Sourcing Partner",
+      "ar": "شريكك الموثوق في التوريد من الصين",
+      "zh": "您值得信赖的中国采购合作伙伴"
+    },
+    "description": {
+      "en": "With deep roots in China manufacturing hubs, we bridge the gap between global buyers and trusted suppliers.",
+      "ar": "جذورنا عميقة في مراكز التصنيع الصينية، نسد الفجوة بين المشترين العالميين والموردين الموثوقين.",
+      "zh": "我们深耕中国制造中心，在供应链的每个环节确保透明、质量和可靠性。"
+    }
+  },
+
+  "processSection": {
+    "title": {
+      "en": "Seamless Trading Workflow",
+      "ar": "سلسلة عمل تجارية سلسة",
+      "zh": "无缝贸易流程"
+    },
+    "description": {
+      "en": "A proven 6-step process ensuring smooth transactions from inquiry to delivery",
+      "ar": "عملية من 6 خطوات تضمن صفقات سلسة من الاستفسار الى التحويل",
+      "zh": "经过验证的6步流程，确保从询价到交付的顺畅交易"
+    }
+  },
+
+  "contactSection": {
+    "title": {
+      "en": "Get In Touch",
+      "ar": "تواصل معنا",
+      "zh": "与我们联系"
+    },
+    "description": {
+      "en": "Ready to start your China sourcing journey? Contact us today for a free consultation.",
+      "ar": "مستعد لبدء رحلتك في التوريد من الصين؟ تواصل معنا اليوم.",
+      "zh": "准备好开始您的中国采购之旅了吗？立即联系我们获取免费咨询。"
+    }
+  },
+
+  "contact": {
+    "email": "ahmedhamzah171@gmail.com",
+    "phone": "+86 156 0871 4980",
+    "whatsapp": "+86 156 0871 4980",
+    "location": {
+      "en": "China (Serving All Major Manufacturing Cities)",
+      "ar": "الصين نغطي جميع المدن الصناعية",
+      "zh": "中国覆盖所有主要制造城市"
+    }
+  },
+
+  "stats": {
+    "clients": 120,
+    "factories": 350,
+    "shipments": 980,
+    "countries": 25
+  },
+
+  "services": [
+    {
+      "category": { "en": "Sourcing Services", "ar": "خدمات التوريد", "zh": "采购服务" },
+      "items": [
+        { "title": { "en": "Supplier Sourcing", "ar": "البحث عن الموردين", "zh": "供应商寻找" }, "description": { "en": "We connect you with verified factories across China.", "ar": "نربطك بمصانع موثوقة في جميع انحاء الصين.", "zh": "我们为您连接中国各地的认证工厂。" } },
+        { "title": { "en": "Price Negotiation", "ar": "التفاوض التجاري", "zh": "价格谈判" }, "description": { "en": "We negotiate the best prices and terms on your behalf.", "ar": "نقوم بالتفاوض للحصول على الى الاسعار والشروط.", "zh": "我们为您争取最佳价格和条件。" } },
+        { "title": { "en": "Product Development", "ar": "تطوير المنتجات", "zh": "产品开发" }, "description": { "en": "Custom manufacturing, private label, and packaging design.", "ar": "تصنيع مخصص علامات تجارية خاصة.", "zh": "定制生产、私人品牌和包装设计。" } }
+      ]
+    },
+    {
+      "category": { "en": "Quality Control", "ar": "مراقبة الجودة", "zh": "质量控制" },
+      "items": [
+        { "title": { "en": "Inspection Services", "ar": "فحص المنتجات", "zh": "产品检验" }, "description": { "en": "Pre-production, in-production, and pre-shipment inspections.", "ar": "فحص قبل واثناء وبعد الانتاج والشحن.", "zh": "生产前、生产中和出货前检查。" } },
+        { "title": { "en": "Quality Assurance", "ar": "ضمان الجودة", "zh": "质量保证" }, "description": { "en": "Ensure products meet international standards.", "ar": "ضمان مطابقة المنتجات للمعايير العالمية.", "zh": "确保产品符合国际标准。" } }
+      ]
+    },
+    {
+      "category": { "en": "Logistics & Shipping", "ar": "الشحن واللوجستيات", "zh": "物流与运输" },
+      "items": [
+        { "title": { "en": "Global Shipping", "ar": "الشحن العالمي", "zh": "全球运输" }, "description": { "en": "Sea, air, express and consolidated shipping solutions.", "ar": "شحن بحري جوي سريع وتجميع الشحنات.", "zh": "海运、空运、快递及拼箱运输解决方案。" } },
+        { "title": { "en": "Customs Handling", "ar": "التخليص الجمركي", "zh": "清关服务" }, "description": { "en": "Smooth customs clearance and documentation handling.", "ar": "تخليص جمركي سلس وادارة الوثائق.", "zh": "顺利清关和文件处理。" } }
+      ]
+    },
+    {
+      "category": { "en": "Order Management", "ar": "ادارة الطلبات", "zh": "订单管理" },
+      "items": [
+        { "title": { "en": "Order Tracking", "ar": "تتبع الطلبات", "zh": "订单跟踪" }, "description": { "en": "Real-time tracking of your orders from production to delivery.", "ar": "تتبع فوري للطلبات من الانتاج الى التحويل.", "zh": "从生产到交付的实时订单跟踪。" } },
+        { "title": { "en": "Inventory Management", "ar": "ادارة المخزون", "zh": "库存管理" }, "description": { "en": "Efficient inventory control and warehouse solutions.", "ar": "رقابة فعلية على المخزون وحلول المستودعات.", "zh": "高效的库存控制和仓库解决方案。" } }
+      ]
+    },
+    {
+      "category": { "en": "Import & Export", "ar": "الاستيراد والتصدير", "zh": "进出口" },
+      "items": [
+        { "title": { "en": "Import Services", "ar": "خدمات الاستيراد", "zh": "进口服务" }, "description": { "en": "Complete import documentation and clearance support.", "ar": "مستندات استيراد كاملة ودعم التخليص.", "zh": "完整的进口文件和清关支持。" } },
+        { "title": { "en": "Export Services", "ar": "خدمات التصدير", "zh": "出口服务" }, "description": { "en": "Export licensing and compliance assistance.", "ar": "تراخيص التصدير ومساعدة الامتثال.", "zh": "出口许可证和合规协助。" } }
+      ]
+    },
+    {
+      "category": { "en": "B2B Trading", "ar": "التجارة B2B", "zh": "B2B贸易" },
+      "items": [
+        { "title": { "en": "Business Matching", "ar": "ربط الشركات", "zh": "商业匹配" }, "description": { "en": "Connecting buyers with trusted manufacturers.", "ar": "ربط المشترين بالمصانع الموثوقة.", "zh": "将买家与可信制造商连接。" } },
+        { "title": { "en": "Trade Mediation", "ar": "الوساطة التجارية", "zh": "贸易中介" }, "description": { "en": "Secure and transparent trade facilitation.", "ar": "تسهيل صفقات تجارية آمنة وشفافة.", "zh": "安全透明的贸易促成服务。" } }
+      ]
+    },
+    {
+      "category": { "en": "Consulting Services", "ar": "الاستشارات", "zh": "咨询服务" },
+      "items": [
+        { "title": { "en": "Market Research", "ar": "دراسة السوق", "zh": "市场调研" }, "description": { "en": "Deep insights into China manufacturing markets.", "ar": "معرفة عميقة عن اسواق التصنيع الصينية.", "zh": "深入了解中国制造市场。" } },
+        { "title": { "en": "Sourcing Strategy", "ar": "استراتيجية التوريد", "zh": "采购策略" }, "description": { "en": "Customized sourcing strategies for your business.", "ar": "استراتيجيات توريد مخصصة لعملك.", "zh": "为您定制的采购策略。" } }
+      ]
+    },
+    {
+      "category": { "en": "China Market Services", "ar": "خدمات السوق الصيني", "zh": "中国市场服务" },
+      "items": [
+        { "title": { "en": "Factory Visits", "ar": "زيارات المصانع", "zh": "工厂访问" }, "description": { "en": "Arranged factory visits with interpretation.", "ar": "تنظيم زيارات للمصانع مع تفسير.", "zh": "安排带翻译的工厂访问。" } },
+        { "title": { "en": "Trade Fair Support", "ar": "دعم المعارض", "zh": "展会支持" }, "description": { "en": "Assistance with China trade fairs and exhibitions.", "ar": "مساعدة في معارض والتجارة الصينية.", "zh": "帮助参加中国贸易展会。" } }
+      ]
+    },
+    {
+      "category": { "en": "Financial Services", "ar": "الخدمات المالية", "zh": "金融服务" },
+      "items": [
+        { "title": { "en": "Payment Solutions", "ar": "حلول الدفع", "zh": "支付解决方案" }, "description": { "en": "Secure payment methods for international trade.", "ar": "طرق دفع آمنة للتجارة الدولية.", "zh": "安全的国际支付方式。" } },
+        { "title": { "en": "Currency Exchange", "ar": "توسط العملات", "zh": "货币兑换" }, "description": { "en": "Competitive FX rates for trade settlements.", "ar": "اسعار تنافسية لتوسط العملات.", "zh": "具有竞争力的汇率。" } }
+      ]
+    },
+    {
+      "category": { "en": "Risk Management", "ar": "ادارة المخاطر", "zh": "风险管理" },
+      "items": [
+        { "title": { "en": "Fraud Protection", "ar": "حماية من الاحتيال", "zh": "防欺诈" }, "description": { "en": "Protect clients from unreliable suppliers and scams.", "ar": "حماية العملاء من الموردين غير الموثوقين والاحتيال.", "zh": "保护客户免受不可靠供应商和欺诈。" } },
+        { "title": { "en": "Quality Guarantees", "ar": "ضمانات الجودة", "zh": "质量保证" }, "description": { "en": "Escrow services and quality bonds.", "ar": "خدمات الضمان والودائع.", "zh": "托管服务和质量保证金。" } }
+      ]
+    }
+  ]
+}
