@@ -25,7 +25,7 @@ export default function Process({ content }) {
   const labels = content?.processSection?.labels || {};
 
   return (
-    <section className="py-24 bg-[#0a1628]">
+    <section id="process" className="py-24 bg-[#0a1628]">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-16">
           <span className="text-[#d4af37] uppercase tracking-widest text-sm font-medium">{t({ en: 'Our Process', ar: 'عملية العمل', zh: '工作流程' })}</span>

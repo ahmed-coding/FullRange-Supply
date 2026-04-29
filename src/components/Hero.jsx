@@ -23,6 +23,8 @@ export default function Hero({ content }) {
 
   const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   const scrollToServices = () => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToProcess = () => document.getElementById('process')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToAboutUs = () => document.getElementById('aboutUs')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <section className="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden">
