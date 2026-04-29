@@ -10,18 +10,19 @@ const stepsData = [
   { key: 'delivery', icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> }
 ];
 
-const labels = {
-  inquiry: { en: 'Inquiry', ar: 'الاستفسار', zh: '询价' },
-  sourcing: { en: 'Supplier Sourcing', ar: 'البحث عن الموردين', zh: '供应商寻找' },
-  negotiation: { en: 'Negotiation', ar: 'التفاوض', zh: '谈判' },
-  sampling: { en: 'Sampling & QC', ar: 'العينات وضمان الجودة', zh: '样品与质检' },
-  shipping: { en: 'Shipping & Logistics', ar: 'الشحن واللوجستيات', zh: '运输与物流' },
-  delivery: { en: 'Delivery', ar: 'التسليم', zh: '交付' }
-};
+// const labels = {
+//   inquiry: { en: 'Inquiry', ar: 'الاستفسار', zh: '询价' },
+//   sourcing: { en: 'Supplier Sourcing', ar: 'البحث عن الموردين', zh: '供应商寻找' },
+//   negotiation: { en: 'Negotiation', ar: 'التفاوض', zh: '谈判' },
+//   sampling: { en: 'Sampling & QC', ar: 'العينات وضمان الجودة', zh: '样品与质检' },
+//   shipping: { en: 'Shipping & Logistics', ar: 'الشحن واللوجستيات', zh: '运输与物流' },
+//   delivery: { en: 'Delivery', ar: 'التسليم', zh: '交付' }
+// };
 
 export default function Process({ content }) {
   const { t } = useLanguage();
   const section = content?.processSection || {};
+  const labels = content?.processSection?.labels || {};
 
   return (
     <section className="py-24 bg-[#0a1628]">

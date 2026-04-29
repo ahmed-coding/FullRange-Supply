@@ -1,23 +1,24 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
-const labels = {
-  name: { en: 'Name', ar: 'الاسم', zh: '姓名' },
-  email: { en: 'Email', ar: 'البريد الإلكتروني', zh: '邮箱' },
-  country: { en: 'Country', ar: 'البلد', zh: '国家' },
-  message: { en: 'Message', ar: 'الرسالة', zh: '留言' },
-  send: { en: 'Send Message', ar: 'إرسال الرسالة', zh: '发送消息' },
-  contactInfo: { en: 'Contact Information', ar: 'معلومات الاتصال', zh: '联系信息' },
-  phone: { en: 'Phone', ar: 'الهاتف', zh: '电话' },
-  location: { en: 'Location', ar: 'الموقع', zh: '位置' },
-  whatsapp: { en: 'WhatsApp', ar: 'واتساب', zh: 'WhatsApp' },
-  emailUs: { en: 'Email Us', ar: 'راسلنا', zh: '发邮件' }
-};
+// const labels = {
+//   name: { en: 'Name', ar: 'الاسم', zh: '姓名' },
+//   email: { en: 'Email', ar: 'البريد الإلكتروني', zh: '邮箱' },
+//   country: { en: 'Country', ar: 'البلد', zh: '国家' },
+//   message: { en: 'Message', ar: 'الرسالة', zh: '留言' },
+//   send: { en: 'Send Message', ar: 'إرسال الرسالة', zh: '发送消息' },
+//   contactInfo: { en: 'Contact Information', ar: 'معلومات الاتصال', zh: '联系信息' },
+//   phone: { en: 'Phone', ar: 'الهاتف', zh: '电话' },
+//   location: { en: 'Location', ar: 'الموقع', zh: '位置' },
+//   whatsapp: { en: 'WhatsApp', ar: 'واتساب', zh: 'WhatsApp' },
+//   emailUs: { en: 'Email Us', ar: 'راسلنا', zh: '发邮件' }
+// };
 
 export default function Contact({ content }) {
   const { t } = useLanguage();
   const contact = content?.contact || {};
   const section = content?.contactSection || {};
+  const labels = content?.contactSection.labels || {};
 
   const handleSubmit = (e) => {
     e.preventDefault();

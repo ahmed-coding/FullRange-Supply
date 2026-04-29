@@ -76,6 +76,14 @@
       "en": "A proven 6-step process ensuring smooth transactions from inquiry to delivery",
       "ar": "عملية من 6 خطوات تضمن صفقات سلسة من الاستفسار إلى التسليم",
       "zh": "经过验证的6步流程，确保从询价到交付的顺畅交易"
+    },
+    "labels": {
+      "inquiry": { "en": "Inquiry", "ar": "الاستفسار", "zh": "询价" },
+      "sourcing": { "en": "Supplier Sourcing", "ar": "البحث عن الموردين", "zh": "供应商寻找" },
+      "negotiation": { "en": "Negotiation", "ar": "التفاوض", "zh": "谈判" },
+      "sampling": { "en": "Sampling & QC", "ar": "العينات وضمان الجودة", "zh": "样品与质检" },
+      "shipping": { "en": "Shipping & Logistics", "ar": "الشحن واللوجستيات", "zh": "运输与物流" },
+      "delivery": { "en": "Delivery", "ar": "التسليم", "zh": "交付" }
     }
   },
 
@@ -89,6 +97,19 @@
       "en": "Ready to start your China sourcing journey? Contact us today for a free consultation.",
       "ar": "مستعد لبدء رحلتك في التوريد من الصين؟ تواصل معنا اليوم للحصول على استشارة مجانية.",
       "zh": "准备好开始您的中国采购之旅了吗？立即联系我们获取免费咨询。"
+    },
+
+    "labels" : {
+      "name": { "en": "Name", "ar": "الاسم", "zh": "姓名" },
+      "email": { "en": "Email", "ar": "البريد الإلكتروني", "zh": "邮箱" },
+      "country": { "en": "Country", "ar": "البلد", "zh": "国家" },
+      "message": { "en": "Message", "ar": "الرسالة", "zh": "留言" },
+      "send": { "en": "Send Message", "ar": "إرسال الرسالة", "zh": "发送消息" },
+      "contactInfo": { "en": "Contact Information", "ar": "معلومات الاتصال", "zh": "联系信息" },
+      "phone": { "en": "Phone", "ar": "الهاتف", "zh": "电话" },
+      "location": { "en": "Location", "ar": "الموقع", "zh": "位置" },
+      "whatsapp": { "en": "WhatsApp", "ar": "واتساب", "zh": "WhatsApp" },
+      "emailUs": { "en": "Email Us", "ar": "راسلنا", "zh": "发邮件" }
     }
   },
 
@@ -190,4 +211,5 @@
       ]
     }
   ]
+
 }
