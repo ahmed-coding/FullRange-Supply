@@ -35,18 +35,16 @@ export default function About({ content }) {
   const stats = content?.stats || {};
   const section = content?.aboutSection || {};
 
-  const statsArray = [
-    { key: 'clients', label: { en: 'Global Clients', ar: 'عملاء حول العالم', zh: '全球客户' } },
-    { key: 'factories', label: { en: 'Partner Factories', ar: 'مصانع شريكة', zh: '合作工厂' } },
-    { key: 'shipments', label: { en: 'Shipments Completed', ar: 'شحنات مكتملة', zh: '已完成货运' } },
-    { key: 'countries', label: { en: 'Countries Served', ar: 'بلدان', zh: '服务国家' } }
-  ];
+  // const statsArray = [
+  //   { key: 'clients', label: { en: 'Global Clients', ar: 'عملاء حول العالم', zh: '全球客户' } },
+  //   { key: 'factories', label: { en: 'Partner Factories', ar: 'مصانع شريكة', zh: '合作工厂' } },
+  //   { key: 'shipments', label: { en: 'Shipments Completed', ar: 'شحنات مكتملة', zh: '已完成货运' } },
+  //   { key: 'countries', label: { en: 'Countries Served', ar: 'بلدان', zh: '服务国家' } }
+  // ];
 
-  const values = [
-    { en: 'Reliability First', ar: 'الموثوقية اولا', zh: '诚信至上' },
-    { en: 'Quality Guaranteed', ar: 'الجودة مضمونة', zh: '质量保证' },
-    { en: 'Global Reach', ar: 'الانتشار العالمي', zh: '全球覆盖' }
-  ];
+  const statsArray = content?.statsArray || [];
+  const values = content?.aboutValues || [];
+
 
   return (
     <section className="py-24 bg-gradient-to-b from-[#0a1628] to-[#0f2744]">

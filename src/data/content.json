@@ -60,6 +60,11 @@
       "zh": "我们深耕中国制造中心，在供应链的每个环节确保透明、质量和可靠性。"
     }
   },
+  "aboutValues": [
+    { "en": "Reliability First", "ar": "الموثوقية اولا", "zh": "诚信至上" },
+    { "en": "Quality Guaranteed", "ar": "الجودة مضمونة", "zh": "质量保证" },
+    { "en": "Global Reach", "ar": "الانتشار العالمي", "zh": "全球覆盖" }
+  ],
 
   "processSection": {
     "title": {
@@ -104,6 +109,13 @@
     "shipments": 980,
     "countries": 25
   },
+
+  "statsArray":[
+    {"key": "clients", "label": { "en": "Global Clients", "ar": "عملاء حول العالم", "zh": "全球客户" }},
+    {"key": "factories", "label": { "en": "Partner Factories", "ar": "مصانع شريكة", "zh": "合作工厂" }},
+    {"key": "shipments", "label": { "en": "Shipments Completed", "ar": "شحنات مكتملة", "zh": "已完成货运" }},
+    {"key": "countries", "label": { "en": "Countries Served", "ar": "بلدان", "zh": "服务国家" }}
+  ],
 
   "services": [
     {
