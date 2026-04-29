@@ -61,7 +61,7 @@
     }
   },
   "aboutValues": [
-    { "en": "Reliability First", "ar": "الموثوقية اولا", "zh": "诚信至上" },
+    { "en": "Reliability First", "ar": "الموثوقية أولاً", "zh": "诚信至上" },
     { "en": "Quality Guaranteed", "ar": "الجودة مضمونة", "zh": "质量保证" },
     { "en": "Global Reach", "ar": "الانتشار العالمي", "zh": "全球覆盖" }
   ],
@@ -81,7 +81,7 @@
       "inquiry": { "en": "Inquiry", "ar": "الاستفسار", "zh": "询价" },
       "sourcing": { "en": "Supplier Sourcing", "ar": "البحث عن الموردين", "zh": "供应商寻找" },
       "negotiation": { "en": "Negotiation", "ar": "التفاوض", "zh": "谈判" },
-      "sampling": { "en": "Sampling & QC", "ar": "العينات وضمان الجودة", "zh": "样品与质检" },
+      "sampling": { "en": "Sampling & QC", "ar": "فحص العينات ومراقبة الجودة", "zh": "样品与质检" },
       "shipping": { "en": "Shipping & Logistics", "ar": "الشحن واللوجستيات", "zh": "运输与物流" },
       "delivery": { "en": "Delivery", "ar": "التسليم", "zh": "交付" }
     }
@@ -109,7 +109,7 @@
       "phone": { "en": "Phone", "ar": "الهاتف", "zh": "电话" },
       "location": { "en": "Location", "ar": "الموقع", "zh": "位置" },
       "whatsapp": { "en": "WhatsApp", "ar": "واتساب", "zh": "WhatsApp" },
-      "emailUs": { "en": "Email Us", "ar": "راسلنا", "zh": "发邮件" }
+      "emailUs": { "en": "Email Us", "ar": "راسلنا عبر البريد", "zh": "发邮件" }
     }
   },
 
@@ -135,7 +135,7 @@
     {"key": "clients", "label": { "en": "Global Clients", "ar": "عملاء حول العالم", "zh": "全球客户" }},
     {"key": "factories", "label": { "en": "Partner Factories", "ar": "مصانع شريكة", "zh": "合作工厂" }},
     {"key": "shipments", "label": { "en": "Shipments Completed", "ar": "شحنات مكتملة", "zh": "已完成货运" }},
-    {"key": "countries", "label": { "en": "Countries Served", "ar": "بلدان", "zh": "服务国家" }}
+    {"key": "countries", "label": { "en": "Countries Served", "ar": "الدول التي نخدمها", "zh": "服务国家" }}
   ],
 
   "services": [
@@ -211,5 +211,4 @@
       ]
     }
   ]
-
 }
