@@ -42,7 +42,7 @@ export default function About({ content }) {
 
 
   return (
-    <section id="aboutUs" className="py-24 bg-gradient-to-b from-[#0a1628] to-[#0f2744]">
+    <section id="about" className="py-24 bg-gradient-to-b from-[#0a1628] to-[#0f2744]">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-16">
           <span className="text-[#d4af37] uppercase tracking-widest text-sm font-medium">{t({ en: 'About Us', ar: 'من نحن', zh: '关于我们' })}</span>

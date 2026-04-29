@@ -24,7 +24,7 @@ export default function Hero({ content }) {
   const scrollToContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   const scrollToServices = () => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
   const scrollToProcess = () => document.getElementById('process')?.scrollIntoView({ behavior: 'smooth' });
-  const scrollToAboutUs = () => document.getElementById('aboutUs')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToAboutUs = () => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <section className="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden">
@@ -58,9 +58,7 @@ export default function Hero({ content }) {
         </p>
 
 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToContact} className="px-8 py-4 bg-[#d4af37] text-[#0a1628] font-semibold rounded-lg hover:bg-[#e5c76b]">
-            {t(hero.ctaPrimary)}
-          </motion.button>
+
           <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToServices} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
             {t(hero.ctaSecondary)}
           </motion.button>
@@ -69,6 +67,9 @@ export default function Hero({ content }) {
           </motion.button>
           <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToAboutUs} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
             {t(hero.ctaAboutUs)}
+          </motion.button>
+          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToContact} className="px-8 py-4 bg-[#d4af37] text-[#0a1628] font-semibold rounded-lg hover:bg-[#e5c76b]">
+            {t(hero.ctaPrimary)}
           </motion.button>
         </div>
       </motion.div>
