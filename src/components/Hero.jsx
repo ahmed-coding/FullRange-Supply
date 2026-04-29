@@ -57,24 +57,24 @@ export default function Hero({ content }) {
           {t(company.description)}
         </p>
 
-<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20 md:mb-0">
 
-          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToServices} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
-            {t(hero.ctaSecondary)}
+          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={ scrollToContact} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
+            {t(hero.ctaPrimary)}
           </motion.button>
-          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToProcess} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
+          {/* <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToProcess} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
             {t(hero.ctaProcess)}
           </motion.button>
           <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToAboutUs} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
             {t(hero.ctaAboutUs)}
-          </motion.button>
-          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToContact} className="px-8 py-4 bg-[#d4af37] text-[#0a1628] font-semibold rounded-lg hover:bg-[#e5c76b]">
-            {t(hero.ctaPrimary)}
+          </motion.button> */}
+<motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToServices} className="px-8 py-4 bg-[#d4af37] text-[#0a1628] font-semibold rounded-lg hover:bg-[#e5c76b]">
+            {t(hero.ctaSecondary)}
           </motion.button>
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="absolute bottom-10 left-1/2 -translate-x-1/2">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2">
         <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 2 }} className="w-6 h-10 rounded-full border-2 border-slate-600 flex justify-center pt-2">
           <div className="w-1 h-2 bg-slate-600 rounded-full" />
         </motion.div>
