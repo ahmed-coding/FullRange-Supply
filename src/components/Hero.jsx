@@ -57,12 +57,18 @@ export default function Hero({ content }) {
           {t(company.description)}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToContact} className="px-8 py-4 bg-[#d4af37] text-[#0a1628] font-semibold rounded-lg hover:bg-[#e5c76b]">
             {t(hero.ctaPrimary)}
           </motion.button>
           <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToServices} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
             {t(hero.ctaSecondary)}
+          </motion.button>
+          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToProcess} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
+            {t(hero.ctaProcess)}
+          </motion.button>
+          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToAboutUs} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
+            {t(hero.ctaAboutUs)}
           </motion.button>
         </div>
       </motion.div>

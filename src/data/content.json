@@ -28,10 +28,20 @@
       "ar": "اتصل بنا",
       "zh": "联系我们"
     },
-    "ctaSecondary": {
+"ctaSecondary": {
       "en": "Our Services",
       "ar": "خدماتنا",
       "zh": "我们的服务"
+    },
+    "ctaProcess": {
+      "en": "Our Process",
+      "ar": "عملية العمل",
+      "zh": "工作流程"
+    },
+    "ctaAboutUs": {
+      "en": "About Us",
+      "ar": "من نحن",
+      "zh": "关于我们"
     }
   },
 
