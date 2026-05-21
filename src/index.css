@@ -38,7 +38,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(ellipse at 20% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 50%, rgba(22, 54, 97, 0.3) 0%, transparent 50%);
   pointer-events: none;
@@ -77,4 +77,30 @@ body {
 
 .animate-pulse-glow {
   animation: pulse-glow 4s ease-in-out infinite;
+}
+
+/* Touch target sizing for mobile accessibility */
+@media (max-width: 768px) {
+  button, a, input, textarea, select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Prefers Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visible states for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--gold-500);
+  outline-offset: 2px;
 }

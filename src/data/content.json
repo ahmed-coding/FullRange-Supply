@@ -123,6 +123,149 @@
     }
   },
 
+  "manufacturingCities": [
+    {
+      "name": { "en": "Shenzhen", "ar": "شنتشن", "zh": "深圳" },
+      "province": { "en": "Guangdong", "ar": "قوانغدونغ", "zh": "广东" },
+      "specialties": {
+        "en": "Electronics, Semiconductors, Consumer Tech",
+        "ar": "الإلكترونيات، المعالجات، تكنولوجيا المستهلك",
+        "zh": "电子产品、半导体、消费电子"
+      },
+      "whyLeading": {
+        "en": "China's tech hub with 40+ years of innovation, home to Huawei, DJI, and thousands of electronics manufacturers. Advanced supply chains for cutting-edge technology products.",
+        "ar": "مركز التكنولوجيا الصيني مع 40 سنة من الابتكار، موطن هواوي و DJI والآلاف من مصنعي الإلكترونيات. سلاسل إمداد متقدمة للمنتجات التقنية المتطورة.",
+        "zh": "中国科技中心，拥有40年创新历史，是华为、大疆等企业的总部。拥有先进的高科技产品供应链。"
+      }
+    },
+    {
+      "name": { "en": "Guangzhou", "ar": "قوانغتشو", "zh": "广州" },
+      "province": { "en": "Guangdong", "ar": "قوانغدونغ", "zh": "广东" },
+      "specialties": {
+        "en": "Textiles, Apparel, Home Furnishings, Wholesale",
+        "ar": "المنسوجات، الملابس، الأثاث المنزلي، الجملة",
+        "zh": "纺织品、服装、家居用品、批发"
+      },
+      "whyLeading": {
+        "en": "World's largest textile and apparel hub with Canton Fair attracting 200,000+ traders annually. Unmatched wholesale networks and competitive pricing on soft goods.",
+        "ar": "أكبر مركز للنسيج والملابس في العالم مع معرض كانتون الذي يجذب أكثر من 200000 تاجر سنويا. شبكات جملة لا مثيل لها وأسعار تنافسية على السلع الناعمة.",
+        "zh": "世界最大的纺织服装枢纽，广交会每年吸引20万以上商人。无与伦比的批发网络和软商品价格优势。"
+      }
+    },
+    {
+      "name": { "en": "Suzhou", "ar": "سوتشو", "zh": "苏州" },
+      "province": { "en": "Jiangsu", "ar": "جيانغسو", "zh": "江苏" },
+      "specialties": {
+        "en": "Semiconductors, Display Panels, Precision Manufacturing",
+        "ar": "المعالجات، لوحات العرض، التصنيع الدقيق",
+        "zh": "芯片、显示面板、精密制造"
+      },
+      "whyLeading": {
+        "en": "Silicon Valley of China with Samsung, SK Hynix, and leading semiconductor plants. Exceptional precision manufacturing ecosystem for high-tech components.",
+        "ar": "وادي السيليكون الصيني مع سامسونج و SK Hynix ومصانع المعالجات الرائدة. نظام تصنيع دقيق استثنائي لمكونات عالية التقنية.",
+        "zh": "中国硅谷，拥有三星、SK海力士和先进芯片厂。卓越的高科技组件精密制造生态。"
+      }
+    },
+    {
+      "name": { "en": "Shanghai", "ar": "شنغهاي", "zh": "上海" },
+      "province": { "en": "Shanghai", "ar": "شنغهاي", "zh": "上海" },
+      "specialties": {
+        "en": "Chemicals, Petrochemicals, Heavy Machinery, Logistics",
+        "ar": "الكيماويات، البتروكيماويات، الآلات الثقيلة، الخدمات اللوجستية",
+        "zh": "化工、石油化工、重型机械、物流"
+      },
+      "whyLeading": {
+        "en": "International trade hub and financial center with world-class logistics. Direct port access to 200+ countries. Strategic distribution center for global exports.",
+        "ar": "مركز التجارة الدولية والمالية مع خدمات لوجستية عالمية. وصول مباشر إلى أكثر من 200 دولة. مركز توزيع استراتيجي للصادرات العالمية.",
+        "zh": "国际贸易枢纽和金融中心，拥有世界级物流。直接港口连接200多个国家。全球出口的战略配送中心。"
+      }
+    },
+    {
+      "name": { "en": "Hangzhou", "ar": "هانغتشو", "zh": "杭州" },
+      "province": { "en": "Zhejiang", "ar": "تشجيانغ", "zh": "浙江" },
+      "specialties": {
+        "en": "E-commerce, Digital, Cross-border Trade, Software",
+        "ar": "التجارة الإلكترونية، الرقمية، التجارة العابرة للحدود، البرمجيات",
+        "zh": "电子商务、数字、跨境贸易、软件"
+      },
+      "whyLeading": {
+        "en": "Alibaba headquarters and digital commerce leader. Pioneer in cross-border e-commerce with advanced logistics and payment infrastructure for global merchants.",
+        "ar": "مقر علي بابا وزعيم التجارة الرقمية. رائد في التجارة الإلكترونية العابرة للحدود مع بنية تحتية متقدمة للخدمات اللوجستية والدفع.",
+        "zh": "阿里巴巴总部和数字商务领导者。跨境电商先驱，拥有先进的物流和支付基础设施。"
+      }
+    },
+    {
+      "name": { "en": "Dongguan", "ar": "دونغغوان", "zh": "东莞" },
+      "province": { "en": "Guangdong", "ar": "قوانغدونغ", "zh": "广东" },
+      "specialties": {
+        "en": "Electronics Assembly, Consumer Goods, Leather, Toys",
+        "ar": "تجميع الإلكترونيات، السلع الاستهلاكية، الجلود، الألعاب",
+        "zh": "电子组装、消费品、皮革、玩具"
+      },
+      "whyLeading": {
+        "en": "World's factory with 30,000+ manufacturers. Specializes in contract manufacturing and OEM/ODM services. Rapid prototyping and high-volume production capabilities.",
+        "ar": "مصنع العالم مع أكثر من 30000 مصنع. متخصصة في التصنيع بالعقد وخدمات OEM/ODM. قدرات النماذج الأولية السريعة والإنتاج بكميات كبيرة.",
+        "zh": "世界工厂，拥有30000多家制造商。专门从事代工和OEM/ODM服务。快速原型制造和大批量生产能力。"
+      }
+    },
+    {
+      "name": { "en": "Chongqing", "ar": "تشونغتشينغ", "zh": "重庆" },
+      "province": { "en": "Chongqing", "ar": "تشونغتشينغ", "zh": "重庆" },
+      "specialties": {
+        "en": "Motorcycles, Auto Parts, Machinery, Industrial Equipment",
+        "ar": "الدراجات النارية، قطع غيار السيارات، الآلات، المعدات الصناعية",
+        "zh": "摩托车、汽车零部件、机械、工业设备"
+      },
+      "whyLeading": {
+        "en": "China's motorcycle capital and emerging auto hub. Advanced manufacturing for heavy machinery and industrial components. Growing new energy vehicle sector.",
+        "ar": "عاصمة الدراجات النارية الصينية ومركز السيارات الناشئ. التصنيع المتقدم للآلات الثقيلة ومكونات الصناعة. قطاع المركبات الكهربائية الجديد الناشئ.",
+        "zh": "中国摩托车之都和新兴汽车中心。重型机械和工业零部件先进制造。新能源汽车产业蓬勃发展。"
+      }
+    },
+    {
+      "name": { "en": "Kunshan", "ar": "كونشان", "zh": "昆山" },
+      "province": { "en": "Jiangsu", "ar": "جيانغسو", "zh": "江苏" },
+      "specialties": {
+        "en": "Precision Machinery, Tools, Die Casting, Metal Stamping",
+        "ar": "الآلات الدقيقة، الأدوات، صب المعادن، الختم المعدني",
+        "zh": "精密机械、工具、压铸、金属冲压"
+      },
+      "whyLeading": {
+        "en": "Global precision manufacturing center with exceptional tool and die capabilities. ISO-certified plants with advanced CNC and automation technology.",
+        "ar": "مركز التصنيع الدقيق العالمي مع قدرات أدوات وقوالب استثنائية. مصانع معتمدة ISO مع تكنولوجيا CNC متقدمة والأتمتة.",
+        "zh": "全球精密制造中心，具有卓越的模具能力。ISO认证工厂，配备先进的数控和自动化技术。"
+      }
+    },
+    {
+      "name": { "en": "Wuhan", "ar": "ووهان", "zh": "武汉" },
+      "province": { "en": "Hubei", "ar": "هوبي", "zh": "湖北" },
+      "specialties": {
+        "en": "Optics, Optical Fibers, Healthcare, New Materials",
+        "ar": "البصريات، الألياف البصرية، الرعاية الصحية، المواد الجديدة",
+        "zh": "光学、光纤、医疗、新材料"
+      },
+      "whyLeading": {
+        "en": "China's optics and photonics center with leading universities and research institutions. Hub for high-tech materials and precision optical manufacturing.",
+        "ar": "مركز البصريات والفوتونيات الصيني مع جامعات ومؤسسات بحثية رائدة. مركز للمواد عالية التقنية وتصنيع البصريات الدقيقة.",
+        "zh": "中国光学光电中心，拥有领先的大学和研究机构。高科技材料和精密光学制造中心。"
+      }
+    },
+    {
+      "name": { "en": "Ningbo", "ar": "نينغبو", "zh": "宁波" },
+      "province": { "en": "Zhejiang", "ar": "تشجيانغ", "zh": "浙江" },
+      "specialties": {
+        "en": "Port & Logistics, Petrochemicals, Electrical Components, Auto Parts",
+        "ar": "الموانئ واللوجستيات، البتروكيماويات، المكونات الكهربائية، قطع السيارات",
+        "zh": "港口物流、石油化工、电气部件、汽车零部件"
+      },
+      "whyLeading": {
+        "en": "World's busiest container port (after Shanghai) with strategic location. Integrated port-industry complex for efficient import/export operations and distribution.",
+        "ar": "ثالث أكثر ميناء حاويات ازدحاما في العالم مع موقع استراتيجي. مجمع صناعي موحد للعمليات الفعالة للاستيراد والتصدير والتوزيع.",
+        "zh": "世界最繁忙的集装箱港口（仅次于上海），位置战略性强。一体化港口工业园区，用于高效的进出口和配送。"
+      }
+    }
+  ],
+
   "contact": {
     "email": "ahmedhamzah171@gmail.com",
     "phone": "+86 156 0871 4980",
