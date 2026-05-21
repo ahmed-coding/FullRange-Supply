@@ -1,10 +1,19 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
+import { useThemeClasses } from '../hooks/useThemeClasses';
 
 export default function ManufacturingCities({ content }) {
   const { t, activeLang } = useLanguage();
+  const { theme, currentTheme } = useTheme();
+  const classes = useThemeClasses(currentTheme);
   const cities = content?.manufacturingCities || [];
+
+  // Get theme-specific colors
+  const accentColor = theme?.colors?.primary || '#d4af37';
+  const textColor = theme?.colors?.text || '#ffffff';
+  const bgColor = theme?.colors?.backgroundDark || '#0a1628';
 
   const [selectedCity, setSelectedCity] = useState(null);
   const [activeFilter, setActiveFilter] = useState('all');

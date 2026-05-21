@@ -1,4 +1,5 @@
 import { LanguageProvider } from './context/LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
@@ -7,6 +8,7 @@ import Process from './components/Process';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import LanguageSwitcher from './components/LanguageSwitcher';
+import ThemeSwitcher from './components/ThemeSwitcher';
 import contentData from './data/content.json';
 
 function Navbar() {
@@ -53,20 +55,23 @@ function App() {
   const content = contentData.content || contentData;
 
   return (
-    <LanguageProvider>
-      <div className="min-h-screen bg-[#0a1628]">
-        <Navbar />
-        <main className="pt-16">
-          <Hero content={content} />
-          <Services content={content} />
-          <About content={content} />
-          <ManufacturingCities content={content} />
-          <Process content={content} />
-          <Contact content={content} />
-        </main>
-        <Footer content={content} />
-      </div>
-    </LanguageProvider>
+    <ThemeProvider initialTheme="luxury-minimal">
+      <LanguageProvider>
+        <div className="min-h-screen transition-colors duration-300" style={{ backgroundColor: 'var(--color-background-dark, #0a1628)' }}>
+          <Navbar />
+          <main className="pt-16">
+            <Hero content={content} />
+            <Services content={content} />
+            <About content={content} />
+            <ManufacturingCities content={content} />
+            <Process content={content} />
+            <Contact content={content} />
+          </main>
+          <Footer content={content} />
+          <ThemeSwitcher />
+        </div>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
 
