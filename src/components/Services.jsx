@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
+import { useThemeClasses } from '../hooks/useThemeClasses';
 
 const icons = [
   <svg key="sourcing" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>,
@@ -16,32 +18,58 @@ const icons = [
 
 export default function Services({ content }) {
   const { t } = useLanguage();
+  const { theme, currentTheme } = useTheme();
+  const classes = useThemeClasses(currentTheme);
   const services = content?.services || [];
   const section = content?.servicesSection || {};
 
   const getIcon = (idx) => icons[idx % icons.length];
 
+  // Get theme-specific colors and styles
+  const bgStyle = {
+    backgroundColor: theme?.colors?.backgroundDark || '#0a1628',
+  };
+  const accentColor = theme?.colors?.primary || '#d4af37';
+  const textColor = theme?.colors?.text || '#ffffff';
+  const textLightColor = theme?.colors?.textLight || '#a0aec0';
+
   return (
-    <section id="services" className="py-24 bg-[#0a1628]">
+    <section id="services" className="py-24 transition-colors duration-300" style={bgStyle}>
       <div className="max-w-7xl mx-auto px-6">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-16">
-          <span className="text-[#d4af37] uppercase tracking-widest text-sm font-medium">{t({ en: 'Our Expertise', ar: 'خبراتنا', zh: '我们的专业' })}</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-6">{t(section.title)}</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto text-lg">{t(section.description)}</p>
+          <span className="uppercase tracking-widest text-sm font-medium transition-colors duration-300" style={{ color: accentColor }}>{t({ en: 'Our Expertise', ar: 'خبراتنا', zh: '我们的专业' })}</span>
+          <h2 className={`${classes.getHeadingClasses('h2')} mt-4 mb-6 transition-colors duration-300`} style={{ color: textColor }}>{t(section.title)}</h2>
+          <p className={`max-w-2xl mx-auto text-lg transition-colors duration-300`} style={{ color: textLightColor }}>{t(section.description)}</p>
         </motion.div>
 
         <motion.div variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } }} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((category, catIndex) => (
-            <motion.div key={catIndex} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="card-gradient rounded-xl p-6 hover:-translate-y-1 transition-all duration-300">
+            <motion.div
+              key={catIndex}
+              variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+              className={`${classes.getCardClasses('default')} p-6 transition-all duration-300`}
+              style={{
+                backgroundColor: theme?.colors?.background || 'rgba(15, 39, 68, 0.8)',
+                borderColor: `${accentColor}20`,
+              }}
+            >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#d4af37]/10 flex items-center justify-center text-[#d4af37]">{getIcon(catIndex)}</div>
-                <h3 className="text-xl font-semibold text-white">{t(category.category)}</h3>
+                <div
+                  className="w-10 h-10 rounded-lg flex items-center justify-center transition-colors duration-300"
+                  style={{
+                    backgroundColor: `${accentColor}15`,
+                    color: accentColor,
+                  }}
+                >
+                  {getIcon(catIndex)}
+                </div>
+                <h3 className={`text-xl font-semibold transition-colors duration-300`} style={{ color: textColor }}>{t(category.category)}</h3>
               </div>
               <div className="space-y-3">
                 {category.items?.map((item, itemIndex) => (
-                  <div key={itemIndex} className="border-l-2 border-[#d4af37]/30 pl-4">
-                    <h4 className="text-white font-medium mb-1">{t(item.title)}</h4>
-                    <p className="text-slate-400 text-sm">{t(item.description)}</p>
+                  <div key={itemIndex} className="pl-4" style={{ borderLeftColor: `${accentColor}30`, borderLeftWidth: '2px' }}>
+                    <h4 className={`font-medium mb-1 transition-colors duration-300`} style={{ color: textColor }}>{t(item.title)}</h4>
+                    <p className={`text-sm transition-colors duration-300`} style={{ color: textLightColor }}>{t(item.description)}</p>
                   </div>
                 ))}
               </div>

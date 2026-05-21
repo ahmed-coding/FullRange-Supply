@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
+import { useThemeClasses } from '../hooks/useThemeClasses';
 
 const stepsData = [
   { key: 'inquiry', icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg> },
@@ -21,30 +23,51 @@ const stepsData = [
 
 export default function Process({ content }) {
   const { t } = useLanguage();
+  const { theme, currentTheme } = useTheme();
+  const classes = useThemeClasses(currentTheme);
   const section = content?.processSection || {};
   const labels = content?.processSection?.labels || {};
 
+  // Get theme-specific colors and styles
+  const bgStyle = {
+    backgroundColor: theme?.colors?.backgroundDark || '#0a1628',
+  };
+  const accentColor = theme?.colors?.primary || '#d4af37';
+  const textColor = theme?.colors?.text || '#ffffff';
+  const textLightColor = theme?.colors?.textLight || '#a0aec0';
+  const secondaryColor = theme?.colors?.secondary || '#0f2744';
+
   return (
-    <section id="process" className="py-24 bg-[#0a1628]">
+    <section id="process" className="py-24 transition-colors duration-300" style={bgStyle}>
       <div className="max-w-7xl mx-auto px-6">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-16">
-          <span className="text-[#d4af37] uppercase tracking-widest text-sm font-medium">{t({ en: 'Our Process', ar: 'عملية العمل', zh: '工作流程' })}</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-6">{t(section.title)}</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto text-lg">{t(section.description)}</p>
+          <span className="uppercase tracking-widest text-sm font-medium transition-colors duration-300" style={{ color: accentColor }}>{t({ en: 'Our Process', ar: 'عملية العمل', zh: '工作流程' })}</span>
+          <h2 className={`${classes.getHeadingClasses('h2')} mt-4 mb-6 transition-colors duration-300`} style={{ color: textColor }}>{t(section.title)}</h2>
+          <p className={`max-w-2xl mx-auto text-lg transition-colors duration-300`} style={{ color: textLightColor }}>{t(section.description)}</p>
         </motion.div>
 
         <div className="relative">
-          <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent -translate-y-1/2" />
+          <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 -translate-y-1/2 transition-colors duration-300" style={{
+            background: `linear-gradient(to right, transparent, ${accentColor}30, transparent)`
+          }} />
           <div className="grid grid-cols-2 md:grid-cols-6 gap-4 md:gap-2">
             {stepsData.map((step, index) => (
               <motion.div key={step.key} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }} className="relative">
                 <div className="flex flex-col items-center">
-                  <motion.div whileHover={{ scale: 1.1 }} className="relative z-10 w-16 h-16 rounded-full bg-[#0a1628] border-2 border-[#d4af37] flex items-center justify-center text-[#d4af37] mb-4">
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    className="relative z-10 w-16 h-16 rounded-full border-2 flex items-center justify-center mb-4 transition-all duration-300"
+                    style={{
+                      backgroundColor: secondaryColor,
+                      borderColor: accentColor,
+                      color: accentColor,
+                    }}
+                  >
                     {step.icon}
                   </motion.div>
                   <div className="text-center">
-                    <span className="text-[#d4af37] text-sm font-medium mb-1 block">0{index + 1}</span>
-                    <h3 className="text-white font-semibold text-sm md:text-base">{t(labels[step.key])}</h3>
+                    <span className="text-sm font-medium mb-1 block transition-colors duration-300" style={{ color: accentColor }}>0{index + 1}</span>
+                    <h3 className={`font-semibold text-sm md:text-base transition-colors duration-300`} style={{ color: textColor }}>{t(labels[step.key])}</h3>
                   </div>
                 </div>
               </motion.div>
@@ -53,7 +76,7 @@ export default function Process({ content }) {
         </div>
 
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.6 }} className="mt-16 text-center">
-          <p className="text-slate-400">{t({ en: 'Each step is managed by our expert team with transparent communication', ar: 'كل خطوة يديرها فريقنا الخبير مع تواصل شفاف', zh: '每一步都由我们的专业团队管理，保持透明沟通' })}</p>
+          <p className="transition-colors duration-300" style={{ color: textLightColor }}>{t({ en: 'Each step is managed by our expert team with transparent communication', ar: 'كل خطوة يديرها فريقنا الخبير مع تواصل شفاف', zh: '每一步都由我们的专业团队管理，保持透明沟通' })}</p>
         </motion.div>
       </div>
     </section>

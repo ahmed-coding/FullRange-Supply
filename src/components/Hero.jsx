@@ -20,6 +20,8 @@ const iconArray = Object.values(icons);
 
 export default function Hero({ content }) {
   const { t } = useLanguage();
+  const { theme, currentTheme } = useTheme();
+  const classes = useThemeClasses(currentTheme);
   const company = content?.company || {};
   const hero = content?.hero || {};
 
@@ -28,10 +30,25 @@ export default function Hero({ content }) {
   const scrollToProcess = () => document.getElementById('process')?.scrollIntoView({ behavior: 'smooth' });
   const scrollToAboutUs = () => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
 
+  // Get theme-specific background
+  const bgStyle = {
+    backgroundColor: theme?.colors?.backgroundDark || '#0a1628',
+  };
+
+  // Get theme-specific text color
+  const textColor = theme?.colors?.text || '#ffffff';
+  const accentColor = theme?.colors?.primary || '#d4af37';
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a1628] pointer-events-none" />
-      <motion.div 
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden transition-colors duration-300"
+      style={bgStyle}
+    >
+      <div className="absolute inset-0 pointer-events-none" style={{
+        background: `linear-gradient(135deg, ${theme?.colors?.backgroundDark || '#0a1628'} 0%, ${theme?.colors?.secondary || '#0f2744'} 50%, ${theme?.colors?.backgroundDark || '#0a1628'} 100%)`
+      }} />
+
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -41,44 +58,57 @@ export default function Hero({ content }) {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/20 mb-8"
+          className={classes.getBadgeClasses()}
+          style={{
+            backgroundColor: `${accentColor}15`,
+            borderColor: `${accentColor}30`,
+            color: accentColor,
+          }}
         >
-          <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse" />
-          <span className="text-sm font-medium text-[#d4af37] uppercase tracking-wider">{t(hero.badge)}</span>
+          <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: accentColor }} />
+          <span className="text-sm font-medium uppercase tracking-wider">{t(hero.badge)}</span>
         </motion.div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-white">{t(company.name)}</span>
+        <h1 className={`${classes.getHeadingClasses('h1')} mb-6 transition-colors duration-300`} style={{ color: textColor }}>
+          <span>{t(company.name)}</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-[#d4af37] font-medium mb-4 gold-gradient-text">
+        <p className={`text-xl md:text-2xl font-medium mb-4 transition-colors duration-300`} style={{ color: accentColor }}>
           {t(company.tagline)}
         </p>
 
-        <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed">
+        <p className={`text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed transition-colors duration-300`} style={{ color: theme?.colors?.textLight || '#a0aec0' }}>
           {t(company.description)}
         </p>
 
-<div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20 md:mb-0">
-
-          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={ scrollToContact} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20 md:mb-0">
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={scrollToContact}
+            className={`${classes.getButtonClasses('secondary', 'md')} transition-all duration-300`}
+            style={{
+              borderColor: accentColor,
+              color: accentColor,
+            }}
+          >
             {t(hero.ctaPrimary)}
           </motion.button>
-          {/* <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToProcess} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
-            {t(hero.ctaProcess)}
-          </motion.button>
-          <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToAboutUs} className="px-8 py-4 border border-slate-600 text-white font-semibold rounded-lg hover:border-[#d4af37] hover:text-[#d4af37]">
-            {t(hero.ctaAboutUs)}
-          </motion.button> */}
-<motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={scrollToServices} className="px-8 py-4 bg-[#d4af37] text-[#0a1628] font-semibold rounded-lg hover:bg-[#e5c76b]">
+
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={scrollToServices}
+            className={`${classes.getButtonClasses('primary', 'md')} transition-all duration-300`}
+          >
             {t(hero.ctaSecondary)}
           </motion.button>
         </div>
       </motion.div>
 
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2">
-        <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 2 }} className="w-6 h-10 rounded-full border-2 border-slate-600 flex justify-center pt-2">
-          <div className="w-1 h-2 bg-slate-600 rounded-full" />
+        <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 2 }} className="w-6 h-10 rounded-full border-2 flex justify-center pt-2 transition-colors duration-300" style={{ borderColor: accentColor }}>
+          <div className="w-1 h-2 rounded-full" style={{ backgroundColor: accentColor }} />
         </motion.div>
       </motion.div>
     </section>
