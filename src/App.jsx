@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { LanguageProvider } from './context/LanguageContext';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -66,6 +67,7 @@ function App() {
         </main>
         <Footer content={content} />
       </div>
+      <Analytics />
     </LanguageProvider>
   );
 }
