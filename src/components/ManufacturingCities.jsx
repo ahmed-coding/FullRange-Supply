@@ -3,9 +3,8 @@ import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function ManufacturingCities({ content }) {
-  const { t, activeLang } = useLanguage();
+  const { t } = useLanguage();
   const cities = content?.manufacturingCities || [];
-  const [hoveredCity, setHoveredCity] = useState(null);
   const [expandedCity, setExpandedCity] = useState(null);
 
   const containerVariants = {
@@ -63,130 +62,123 @@ export default function ManufacturingCities({ content }) {
           </p>
         </motion.div>
 
-        {/* Cities Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          {cities.map((city, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              custom={index}
-              onHoverStart={() => setHoveredCity(index)}
-              onHoverEnd={() => setHoveredCity(null)}
-              onClick={() => setExpandedCity(expandedCity === index ? null : index)}
-              className="group cursor-pointer"
-            >
+        {/* Cities Grid - each city with potential expansion below */}
+        <div className="space-y-4">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {cities.map((city, index) => (
               <motion.div
-                variants={cardVariants}
-                initial="initial"
-                whileHover="hover"
-                className="relative h-full bg-gradient-to-br from-[#0f2744] to-[#1a3d5c] border border-[#d4af37]/20 rounded-xl p-6 overflow-hidden transition-all duration-300 hover:border-[#d4af37]/50"
+                key={index}
+                variants={itemVariants}
+                custom={index}
               >
-                {/* Background gradient accent */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-[#d4af37]/10 to-transparent opacity-0"
-                  animate={{
-                    opacity: hoveredCity === index ? 1 : 0,
-                  }}
-                  transition={{ duration: 0.3 }}
-                />
-
-                {/* Rank badge */}
-                <motion.div
-                  className="absolute top-4 right-4 w-8 h-8 bg-[#d4af37]/20 border border-[#d4af37]/40 rounded-full flex items-center justify-center text-[#d4af37] text-xs font-bold"
-                  animate={{
-                    scale: hoveredCity === index ? 1.1 : 1,
-                  }}
-                  transition={{ duration: 0.3 }}
+                <motion.button
+                  onClick={() => setExpandedCity(expandedCity === index ? null : index)}
+                  variants={cardVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  className="w-full text-left relative bg-gradient-to-br from-[#0f2744] to-[#1a3d5c] border border-[#d4af37]/20 rounded-xl p-6 overflow-hidden transition-all duration-300 hover:border-[#d4af37]/50 cursor-pointer"
                 >
-                  {city.rank}
-                </motion.div>
-
-                {/* Content */}
-                <div className="relative z-10 h-full flex flex-col">
-                  {/* City Name & Chinese */}
-                  <div className="mb-4">
-                    <h3 className="text-2xl font-bold text-white mb-1">
-                      {city.city.en}
-                    </h3>
-                    <p className="text-[#d4af37] text-sm font-medium">{city.city.zh}</p>
-                  </div>
-
-                  {/* Specialties */}
-                  <div className="mb-4 flex-grow">
-                    <p className="text-xs uppercase tracking-widest text-slate-500 mb-3">
-                      {t({ en: 'Specialties', ar: 'التخصصات', zh: '专业' })}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {city.specialties.slice(0, 2).map((specialty, i) => (
-                        <motion.span
-                          key={i}
-                          initial={{ opacity: 0.6 }}
-                          whileHover={{ opacity: 1 }}
-                          className="inline-block px-3 py-1 bg-[#d4af37]/10 border border-[#d4af37]/30 rounded-full text-xs text-[#d4af37] font-medium hover:border-[#d4af37]/60 transition-colors"
-                        >
-                          {specialty}
-                        </motion.span>
-                      ))}
-                      {city.specialties.length > 2 && (
-                        <span className="inline-block px-3 py-1 text-xs text-slate-500">
-                          +{city.specialties.length - 2}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Expand indicator */}
+                  {/* Background gradient accent */}
                   <motion.div
-                    animate={{
-                      opacity: hoveredCity === index ? 1 : 0.5,
-                      y: hoveredCity === index ? 0 : 4,
-                    }}
+                    className="absolute inset-0 bg-gradient-to-br from-[#d4af37]/10 to-transparent opacity-0"
+                    whileHover={{ opacity: 1 }}
                     transition={{ duration: 0.3 }}
-                    className="text-[#d4af37] text-sm font-medium flex items-center gap-1"
-                  >
-                    {expandedCity === index
-                      ? t({ en: 'Show Less', ar: 'عرض أقل', zh: '显示较少' })
-                      : t({ en: 'View More', ar: 'عرض المزيد', zh: '查看更多' })}
-                    <motion.svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      stroke="currentColor"
-                      animate={{ rotate: expandedCity === index ? 180 : 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <path d="M4 6L8 10L12 6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </motion.svg>
-                  </motion.div>
-                </div>
-              </motion.div>
+                  />
 
-              {/* Expanded Description */}
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{
-                  opacity: expandedCity === index ? 1 : 0,
-                  height: expandedCity === index ? 'auto' : 0,
-                }}
-                transition={{ duration: 0.3, ease: 'easeOut' }}
-                className="overflow-hidden mt-3"
-              >
-                <div className="bg-[#0f2744]/50 border border-[#d4af37]/10 rounded-xl p-4">
-                  <p className="text-slate-300 text-sm leading-relaxed">
-                    {t(city.description)}
-                  </p>
-                </div>
+                  {/* Rank badge */}
+                  <motion.div
+                    className="absolute top-4 right-4 w-8 h-8 bg-[#d4af37]/20 border border-[#d4af37]/40 rounded-full flex items-center justify-center text-[#d4af37] text-xs font-bold"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {city.rank}
+                  </motion.div>
+
+                  {/* Content */}
+                  <div className="relative z-10">
+                    {/* City Name & Chinese */}
+                    <div className="mb-4">
+                      <h3 className="text-2xl font-bold text-white mb-1">
+                        {city.city.en}
+                      </h3>
+                      <p className="text-[#d4af37] text-sm font-medium">{city.city.zh}</p>
+                    </div>
+
+                    {/* Specialties */}
+                    <div className="mb-4">
+                      <p className="text-xs uppercase tracking-widest text-slate-500 mb-3">
+                        {t({ en: 'Specialties', ar: 'التخصصات', zh: '专业' })}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {city.specialties.slice(0, 2).map((specialty, i) => (
+                          <span
+                            key={i}
+                            className="inline-block px-3 py-1 bg-[#d4af37]/10 border border-[#d4af37]/30 rounded-full text-xs text-[#d4af37] font-medium hover:border-[#d4af37]/60 transition-colors"
+                          >
+                            {specialty}
+                          </span>
+                        ))}
+                        {city.specialties.length > 2 && (
+                          <span className="inline-block px-3 py-1 text-xs text-slate-500">
+                            +{city.specialties.length - 2}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Expand indicator */}
+                    <motion.div
+                      animate={{
+                        opacity: expandedCity === index ? 1 : 0.5,
+                      }}
+                      transition={{ duration: 0.3 }}
+                      className="text-[#d4af37] text-sm font-medium flex items-center gap-1"
+                    >
+                      {expandedCity === index
+                        ? t({ en: 'Show Less', ar: 'عرض أقل', zh: '显示较少' })
+                        : t({ en: 'View More', ar: 'عرض المزيد', zh: '查看更多' })}
+                      <motion.svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        stroke="currentColor"
+                        animate={{ rotate: expandedCity === index ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <path d="M4 6L8 10L12 6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </motion.svg>
+                    </motion.div>
+                  </div>
+                </motion.button>
+
+                {/* Expanded Description - Outside card, below it */}
+                <motion.div
+                  initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                  animate={{
+                    opacity: expandedCity === index ? 1 : 0,
+                    height: expandedCity === index ? 'auto' : 0,
+                    marginTop: expandedCity === index ? 12 : 0,
+                  }}
+                  transition={{ duration: 0.3, ease: 'easeOut' }}
+                  className="overflow-hidden"
+                >
+                  <div className="bg-[#0f2744]/50 border border-[#d4af37]/10 rounded-xl p-4">
+                    <p className="text-slate-300 text-sm leading-relaxed">
+                      {t(city.description)}
+                    </p>
+                  </div>
+                </motion.div>
               </motion.div>
-            </motion.div>
-          ))}
-        </motion.div>
+            ))}
+          </motion.div>
+        </div>
 
         {/* Call to Action */}
         <motion.div
