@@ -1,0 +1,347 @@
+{
+  "company": {
+    "name": {
+      "en": "FullRange Supply",
+      "ar": "FullRange Supply",
+      "zh": "FullRange Supply"
+    },
+    "tagline": {
+      "en": "From China to the World — Smart Sourcing, Safe Trade",
+      "ar": "من الصين إلى العالم — توريد ذكي وتجارة آمنة",
+      "zh": "从中国到世界 — 智能采购，安全贸易"
+    },
+    "description": {
+      "en": "FullRange Supply is a professional trading and sourcing enterprise operating across China's major manufacturing hubs, specializing in connecting international buyers with verified manufacturers, optimizing supply chain operations, and delivering end-to-end solutions from sourcing through logistics management.",
+      "ar": "مؤسسة احترافية للتوريد والتجارة تعمل عبر مراكز التصنيع الرئيسية في الصين، متخصصة في ربط المشترين الدوليين بالمصنعين المعتمدين، وتحسين عمليات سلسلة التوريد، وتقديم حلول شاملة من التوريد إلى إدارة الشحن الدولي.",
+      "zh": "FullRange Supply 是一家在中国主要制造中心开展业务的专业采购与贸易企业，专门从事将国际买家与经过验证的制造商连接、优化供应链运营，并提供从采购到物流管理的端到端解决方案。"
+    }
+  },
+
+  "hero": {
+    "badge": {
+      "en": "Premium Sourcing Partner",
+      "ar": "شريك التوريد المميز",
+      "zh": "优质采购合作伙伴"
+    },
+    "ctaPrimary": {
+      "en": "Contact Us",
+      "ar": "اتصل بنا",
+      "zh": "联系我们"
+    },
+"ctaSecondary": {
+      "en": "Our Services",
+      "ar": "خدماتنا",
+      "zh": "我们的服务"
+    },
+    "ctaProcess": {
+      "en": "Our Process",
+      "ar": "عملية العمل",
+      "zh": "工作流程"
+    },
+    "ctaAboutUs": {
+      "en": "About Us",
+      "ar": "من نحن",
+      "zh": "关于我们"
+    }
+  },
+
+  "servicesSection": {
+    "title": {
+      "en": "Comprehensive Services",
+      "ar": "خدمات شاملة",
+      "zh": "综合服务"
+    },
+    "description": {
+      "en": "End-to-end solutions for your China sourcing needs",
+      "ar": "حلول شاملة لاحتياجات التوريد من الصين",
+      "zh": "一站式中国采购解决方案"
+    }
+  },
+
+  "aboutSection": {
+    "title": {
+      "en": "Your Trusted China Sourcing Partner",
+      "ar": "شريكك الموثوق في التوريد من الصين",
+      "zh": "您值得信赖的中国采购合作伙伴"
+    },
+    "description": {
+      "en": "With established operations across China's premier manufacturing centers, we deliver transparent, quality-assured connections between global procurement teams and verified suppliers, ensuring reliable supply chain partnerships.",
+      "ar": "بعملياتنا الراسخة عبر مراكز التصنيع الرائدة في الصين، نوفر اتصالات شفافة وموثوقة بين فرق الشراء العالمية والموردين المعتمدين، مما يضمن شراكات سلسلة توريد موثوقة.",
+      "zh": "凭借在中国领先制造中心的完善运营，我们在全球采购团队和经过验证的供应商之间提供透明、有质量保证的连接，确保可靠的供应链合作。"
+    }
+  },
+  "aboutValues": [
+    { "en": "Reliability First", "ar": "الموثوقية أولاً", "zh": "诚信至上" },
+    { "en": "Quality Guaranteed", "ar": "الجودة مضمونة", "zh": "质量保证" },
+    { "en": "Global Reach", "ar": "الانتشار العالمي", "zh": "全球覆盖" }
+  ],
+
+  "processSection": {
+    "title": {
+      "en": "Seamless Trading Workflow",
+      "ar": "سلسلة عمل تجارية سلسة",
+      "zh": "无缝贸易流程"
+    },
+    "description": {
+      "en": "Our established, industry-proven 6-step methodology ensures coordinated execution from initial inquiry through final delivery, with quality assurance and compliance integrated at each phase.",
+      "ar": "تضمن منهجيتنا المثبتة والمجربة صناعياً بـ 6 خطوات التنفيذ المنسق من الاستفسار الأولي إلى التسليم النهائي، مع ضمان الجودة والامتثال المدمج في كل مرحلة.",
+      "zh": "我们已经确立的、经过行业验证的6步方法确保从初始询价到最终交付的协调执行，质量保证和合规性贯穿每个阶段。"
+    },
+    "labels": {
+      "inquiry": { "en": "Inquiry", "ar": "الاستفسار", "zh": "询价" },
+      "sourcing": { "en": "Supplier Sourcing", "ar": "البحث عن الموردين", "zh": "供应商寻找" },
+      "negotiation": { "en": "Negotiation", "ar": "التفاوض", "zh": "谈判" },
+      "sampling": { "en": "Sampling & QC", "ar": "فحص العينات ومراقبة الجودة", "zh": "样品与质检" },
+      "shipping": { "en": "Shipping & Logistics", "ar": "الشحن واللوجستيات", "zh": "运输与物流" },
+      "delivery": { "en": "Delivery", "ar": "التسليم", "zh": "交付" }
+    }
+  },
+
+  "contactSection": {
+    "title": {
+      "en": "Get In Touch",
+      "ar": "تواصل معنا",
+      "zh": "与我们联系"
+    },
+    "description": {
+      "en": "Initiate your China sourcing partnership with confidence. Contact our experienced sourcing team today to discuss your procurement requirements and benefit from a complimentary strategic consultation.",
+      "ar": "ابدأ شراكتك في التوريد من الصين بكل ثقة. تواصل مع فريقنا ذي الخبرة اليوم لمناقشة احتياجات الشراء الخاصة بك والاستفادة من استشارة استراتيجية مجانية.",
+      "zh": "以信心开启您的中国采购合作。立即联系我们经验丰富的采购团队，讨论您的采购需求，并获得免费的战略咨询。"
+    },
+
+    "labels" : {
+      "name": { "en": "Name", "ar": "الاسم", "zh": "姓名" },
+      "email": { "en": "Email", "ar": "البريد الإلكتروني", "zh": "邮箱" },
+      "country": { "en": "Country", "ar": "البلد", "zh": "国家" },
+      "message": { "en": "Message", "ar": "الرسالة", "zh": "留言" },
+      "send": { "en": "Send Message", "ar": "إرسال الرسالة", "zh": "发送消息" },
+      "contactInfo": { "en": "Contact Information", "ar": "معلومات الاتصال", "zh": "联系信息" },
+      "phone": { "en": "Phone", "ar": "الهاتف", "zh": "电话" },
+      "location": { "en": "Location", "ar": "الموقع", "zh": "位置" },
+      "whatsapp": { "en": "WhatsApp", "ar": "واتساب", "zh": "WhatsApp" },
+      "emailUs": { "en": "Email Us", "ar": "راسلنا عبر البريد", "zh": "发邮件" }
+    }
+  },
+
+  "contact": {
+    "email": "ahmedhamzah171@gmail.com",
+    "phone": "+86 156 0871 4980",
+    "whatsapp": "+86 156 0871 4980",
+    "location": {
+      "en": "China (Serving All Major Manufacturing Cities)",
+      "ar": "الصين — نغطي جميع المدن الصناعية الرئيسية",
+      "zh": "中国覆盖所有主要制造城市"
+    }
+  },
+
+  "stats": {
+    "clients": 120,
+    "factories": 350,
+    "shipments": 980,
+    "countries": 25
+  },
+
+  "statsArray":[
+    {"key": "clients", "label": { "en": "Global Clients", "ar": "عملاء حول العالم", "zh": "全球客户" }},
+    {"key": "factories", "label": { "en": "Partner Factories", "ar": "مصانع شريكة", "zh": "合作工厂" }},
+    {"key": "shipments", "label": { "en": "Shipments Completed", "ar": "شحنات مكتملة", "zh": "已完成货运" }},
+    {"key": "countries", "label": { "en": "Countries Served", "ar": "الدول التي نخدمها", "zh": "服务国家" }}
+  ],
+
+  "manufacturingCities": [
+    {
+      "rank": 1,
+      "city": { "en": "Shenzhen", "zh": "深圳" },
+      "specialties": ["Electronics & Consumer Electronics", "Semiconductors & Components", "Telecommunications Equipment"],
+      "description": {
+        "en": "China's premier technology hub and manufacturing powerhouse. Shenzhen dominates in fast-moving consumer electronics, component sourcing, and innovative product development. As the nation's foremost Special Economic Zone, it hosts thousands of suppliers ranging from startups to established manufacturers.",
+        "ar": "مركز التكنولوجيا الأول في الصين ومركز التصنيع الرئيسي. تهيمن شنتشن على الإلكترونيات الاستهلاكية سريعة الحركة وتوريد المكونات وتطوير المنتجات المبتكرة. كمنطقة اقتصادية خاصة رائدة، تستضيف آلاف الموردين من الشركات الناشئة إلى المصنعين المتقدمين.",
+        "zh": "中国首屈一指的科技中心和制造业强国。深圳在快速消费电子产品、元器件采购和创新产品开发方面处于领先地位。作为国家主要的经济特区，汇聚了数千家从初创企业到大型制造商的供应商。"
+      }
+    },
+    {
+      "rank": 2,
+      "city": { "en": "Shanghai", "zh": "上海" },
+      "specialties": ["Machinery & Industrial Equipment", "Chemicals & Petrochemicals", "Automotive Components"],
+      "description": {
+        "en": "China's largest commercial hub and international trade gateway. Shanghai excels in heavy machinery, chemical production, and precision manufacturing. The city offers comprehensive industrial supply chains with established export infrastructure and regulatory compliance frameworks.",
+        "ar": "أكبر مركز تجاري في الصين وبوابة التجارة الدولية. تتفوق شنغهاي في الآلات الثقيلة وإنتاج المواد الكيميائية والتصنيع الدقيق. توفر المدينة سلاسل إمدادات صناعية شاملة مع بنية تحتية للتصدير معترف بها وأطر الامتثال التنظيمي.",
+        "zh": "中国最大的商业中心和国际贸易门户。上海在重型机械、化工生产和精密制造领域卓越。拥有完整的工业供应链和成熟的出口基础设施。"
+      }
+    },
+    {
+      "rank": 3,
+      "city": { "en": "Guangzhou", "zh": "广州" },
+      "specialties": ["Textiles & Apparel", "Home Appliances", "Consumer Goods & Accessories"],
+      "description": {
+        "en": "The historic trading capital of South China with extensive experience in global commerce. Guangzhou specializes in textile production, lightweight consumer goods, and home appliances. The city maintains strong traditional trade networks and competitive sourcing capabilities across multiple product categories.",
+        "ar": "عاصمة التجارة التاريخية لجنوب الصين مع خبرة واسعة في التجارة العالمية. تتخصص قوانغتشو في إنتاج المنسوجات والسلع الاستهلاكية الخفيفة والأجهزة المنزلية. تحافظ المدينة على شبكات تجارية تقليدية قوية وقدرات توريد تنافسية عبر فئات منتجات متعددة.",
+        "zh": "华南地区历史悠久的贸易中心。广州专门从事纺织生产、轻工消费品和家电制造。拥有强大的传统贸易网络和多品类竞争力。"
+      }
+    },
+    {
+      "rank": 4,
+      "city": { "en": "Hangzhou", "zh": "杭州" },
+      "specialties": ["E-commerce & Digital Products", "Textiles & Fashion", "Pharmaceutical & Medical Devices"],
+      "description": {
+        "en": "The birthplace of China's digital economy and modern manufacturing innovation. Hangzhou leads in technology-driven production, e-commerce fulfillment, and biotech manufacturing. The city attracts innovative startups and established enterprises seeking digital transformation in their supply chains.",
+        "ar": "مهد الاقتصاد الرقمي الصيني والابتكار في التصنيع الحديث. تقود هانغتشو في الإنتاج الموجه بالتكنولوجيا والوفاء بالتجارة الإلكترونية والتصنيع الحيوي. تجذب المدينة الشركات الناشئة المبتكرة والمؤسسات الراسخة التي تسعى إلى التحول الرقمي في سلاسل الإمدادات الخاصة بها.",
+        "zh": "中国数字经济和现代制造创新的摇篮。杭州在科技驱动生产、电商物流和生物技术制造领域处于领先地位。"
+      }
+    },
+    {
+      "rank": 5,
+      "city": { "en": "Suzhou", "zh": "苏州" },
+      "specialties": ["Electronics & Semiconductors", "Precision Engineering", "Optical Components"],
+      "description": {
+        "en": "A precision manufacturing center renowned for high-tech production quality. Suzhou excels in semiconductor manufacturing, optical components, and precision engineering. The city hosts numerous Fortune 500 companies and provides sophisticated supply chain management for complex technical products.",
+        "ar": "مركز تصنيع دقيق مشهور بجودة الإنتاج عالي التقنية. تتفوق سوتشو في تصنيع أشباه الموصلات والمكونات البصرية والهندسة الدقيقة. تستضيف المدينة عدداً من شركات فوتشن 500 وتوفر إدارة سلسلة إمدادات متطورة للمنتجات التقنية المعقدة.",
+        "zh": "以高科技生产质量著称的精密制造中心。苏州在半导体制造、光学元件和精密工程方面卓越。汇聚众多财富500强企业。"
+      }
+    },
+    {
+      "rank": 6,
+      "city": { "en": "Qingdao", "zh": "青岛" },
+      "specialties": ["Shipbuilding & Marine Equipment", "Rubber & Tire Manufacturing", "Food & Beverage Processing"],
+      "description": {
+        "en": "A major port city with strategic maritime manufacturing capabilities. Qingdao specializes in shipbuilding, marine equipment, and heavy industrial production. The port infrastructure enables efficient global logistics and supports large-scale industrial sourcing operations.",
+        "ar": "مدينة ميناء كبرى بقدرات تصنيع بحرية استراتيجية. تتخصص تشينغداو في بناء السفن ومعدات البحرية والإنتاج الصناعي الثقيل. تمكّن البنية التحتية للميناء عمليات الخدمات اللوجستية العالمية الفعالة وتدعم عمليات التوريد الصناعي على نطاق واسع.",
+        "zh": "具有战略海运制造能力的主要港口城市。青岛专门从事造船、海运设备和重工业生产。港口基础设施支持高效的全球物流。"
+      }
+    },
+    {
+      "rank": 7,
+      "city": { "en": "Chongqing", "zh": "重庆" },
+      "specialties": ["Automotive Manufacturing", "Electronics & Assembly", "Motorcycle Parts"],
+      "description": {
+        "en": "The inland manufacturing hub driving the central region's industrial growth. Chongqing specializes in automotive production, electronic assembly, and motorcycle components. The city offers cost-effective sourcing with improving logistics infrastructure and growing supplier maturity.",
+        "ar": "مركز التصنيع الداخلي الذي يقود النمو الصناعي للمنطقة الوسطى. تتخصص تشونغتشينغ في الإنتاج الزراعي والتجميع الإلكتروني ومكونات الدراجات النارية. توفر المدينة توريداً فعالاً من حيث التكلفة مع تحسين البنية التحتية اللوجستية ونضج الموردين المتنامي.",
+        "zh": "驱动中部地区工业增长的内陆制造中心。重庆专门从事汽车生产、电子组装和摩托车零件制造。提供具有成本效益的采购服务。"
+      }
+    },
+    {
+      "rank": 8,
+      "city": { "en": "Xi'an", "zh": "西安" },
+      "specialties": ["Aerospace & Defense Components", "Heavy Equipment Manufacturing", "Industrial Materials"],
+      "description": {
+        "en": "A strategic industrial center in central China with advanced manufacturing capabilities. Xi'an produces aerospace components, heavy machinery, and industrial materials. The city combines traditional manufacturing expertise with modern production technologies.",
+        "ar": "مركز صناعي استراتيجي في وسط الصين بقدرات تصنيع متقدمة. ينتج شيان مكونات الفضاء والدفاع والآلات الثقيلة والمواد الصناعية. تجمع المدينة بين الخبرة التصنيعية التقليدية والتقنيات الإنتاجية الحديثة.",
+        "zh": "中国中部具有先进制造能力的战略工业中心。西安生产航空航天零件、重型机械和工业材料。结合传统制造专业知识和现代生产技术。"
+      }
+    },
+    {
+      "rank": 9,
+      "city": { "en": "Wuhan", "zh": "武汉" },
+      "specialties": ["Steel & Metal Processing", "Optical Components & Fiber", "Chemical Manufacturing"],
+      "description": {
+        "en": "A key industrial and logistics hub in central China with diversified manufacturing strengths. Wuhan excels in steel production, optical fiber manufacturing, and chemical processing. Strategic river and rail connectivity supports efficient multimodal logistics operations.",
+        "ar": "مركز صناعي وخدمات لوجستية رئيسي في وسط الصين مع نقاط قوة تصنيع متنوعة. تتفوق ووهان في إنتاج الفولاذ وتصنيع ألياف بصرية ومعالجة كيميائية. يدعم الاتصال الاستراتيجي بالأنهار والسكك الحديدية عمليات لوجستية متعددة الوسائط فعالة.",
+        "zh": "中国中部关键的工业和物流中心。武汉在钢铁生产、光纤制造和化工处理方面卓越。战略性河运和铁路连接支持多式联运。"
+      }
+    },
+    {
+      "rank": 10,
+      "city": { "en": "Ningbo", "zh": "宁波" },
+      "specialties": ["Petrochemicals & Plastics", "Port Equipment & Machinery", "Consumer Electronics"],
+      "description": {
+        "en": "A major port city with integrated manufacturing and logistics capabilities. Ningbo specializes in petrochemical production, port machinery, and electronic components. The deep-water port facilities provide direct access to global markets with streamlined shipping operations.",
+        "ar": "مدينة ميناء كبرى بقدرات تصنيع وخدمات لوجستية متكاملة. تتخصص نينغبو في الإنتاج البتروكيميائي ومعدات الميناء والمكونات الإلكترونية. توفر مرافق الميناء بمياه عميقة إمكانية الوصول المباشر إلى الأسواق العالمية مع تبسيط عمليات الشحن.",
+        "zh": "具有综合制造和物流能力的主要港口城市。宁波专门从事石化生产、港口机械和电子元件制造。深水港口设施提供全球市场的直接通道。"
+      }
+    },
+    {
+      "rank": 11,
+      "city": { "en": "Jiangmen", "zh": "江门" },
+      "specialties": ["Lighting & LED Products", "Small Appliances & Electromechanical Products", "Consumer Electronics Assembly"],
+      "description": {
+        "en": "An emerging manufacturing center renowned for specialty electronics and consumer goods production. Jiangmen specializes in LED lighting, compact appliances, and precision assembly operations. The city offers competitive pricing with improving quality standards and supply chain transparency.",
+        "ar": "مركز تصنيع ناشئ مشهور بإنتاج الإلكترونيات المتخصصة والسلع الاستهلاكية. تتخصص جيانغمن في إضاءة LED والأجهزة الصغيرة وعمليات التجميع الدقيقة. توفر المدينة أسعاراً تنافسية مع معايير جودة محسّنة وشفافية سلسلة الإمدادات.",
+        "zh": "以专业电子产品和消费品生产著称的新兴制造中心。江门专门从事LED照明、小型家电和精密组装。提供具有竞争力的价格和改进的质量标准。"
+      }
+    },
+    {
+      "rank": 12,
+      "city": { "en": "Foshan", "zh": "佛山" },
+      "specialties": ["Ceramics & Building Materials", "Metal Products & Hardware", "Home Furnishings & Furniture"],
+      "description": {
+        "en": "A specialized manufacturing powerhouse in ceramics, metal fabrication, and home goods production. Foshan is recognized globally for superior ceramic tiles, precision metal work, and quality furniture manufacturing. The city combines traditional craftsmanship with modern production efficiency.",
+        "ar": "مركز تصنيع متخصص قوي في السيراميك والمعادن والإنتاج المنزلي. معروفة فوشان عالمياً برفع مستوى بلاط السيراميك والعمل المعدني الدقيق وتصنيع الأثاث عالي الجودة. تجمع المدينة بين الحرفية التقليدية والكفاءة الإنتاجية الحديثة.",
+        "zh": "陶瓷、金属制造和家用品生产的专业制造中心。佛山在高端陶瓷砖、精密金属加工和家具制造方面享誉全球。结合传统工艺和现代生产效率。"
+      }
+    }
+  ],
+
+  "services": [
+    {
+      "category": { "en": "Sourcing Services", "ar": "خدمات التوريد", "zh": "采购服务" },
+      "items": [
+        { "title": { "en": "Supplier Sourcing", "ar": "البحث عن الموردين", "zh": "供应商寻找" }, "description": { "en": "We identify and connect you with pre-vetted manufacturers across China's manufacturing ecosystem, aligning supplier capabilities with your specific sourcing requirements.", "ar": "نحدد ونربطك بالمصنعين المفحوصين مسبقاً عبر النظام البيئي للتصنيع الصيني، محاذاة قدرات الموردين مع احتياجات التوريد المحددة الخاصة بك.", "zh": "我们在中国制造业生态系统中识别并为您连接经过预先审查的制造商，使供应商能力与您的具体采购需求相一致。" } },
+        { "title": { "en": "Price Negotiation", "ar": "التفاوض التجاري", "zh": "价格谈判" }, "description": { "en": "We leverage comprehensive market intelligence to secure competitive pricing and favorable commercial terms tailored to your procurement objectives.", "ar": "نستفيد من ذكاء السوق الشامل لتأمين تسعير تنافسي وشروط تجارية مواتية مصممة وفقاً لأهداف الشراء الخاصة بك.", "zh": "我们利用全面的市场情报来确保具有竞争力的定价和符合您采购目标的有利商业条款。" } },
+        { "title": { "en": "Product Development", "ar": "تطوير المنتجات", "zh": "产品开发" }, "description": { "en": "We provide end-to-end product development solutions including bespoke manufacturing, private label services, and strategic packaging design to enhance your brand positioning.", "ar": "نقدم حلول تطوير منتجات شاملة تشمل التصنيع المخصص وخدمات العلامات الخاصة وتصميم التغليف الاستراتيجي لتحسين موقع علامتك التجارية.", "zh": "我们提供端到端的产品开发解决方案，包括定制制造、私人品牌服务和战略性包装设计，以增强您的品牌定位。" } }
+      ]
+    },
+    {
+      "category": { "en": "Quality Control", "ar": "مراقبة الجودة", "zh": "质量控制" },
+      "items": [
+        { "title": { "en": "Inspection Services", "ar": "فحص المنتجات", "zh": "产品检验" }, "description": { "en": "Comprehensive quality assurance through pre-production, in-line production, and final pre-shipment inspections, ensuring compliance with specified standards and client requirements.", "ar": "ضمان جودة شامل من خلال فحوصات ما قبل الإنتاج والإنتاج المباشر والفحص النهائي قبل الشحن، لضمان الامتثال للمعايير المحددة ومتطلبات العميل.", "zh": "通过生产前、生产中和最终出货前检查进行全面的质量保证，确保符合指定标准和客户要求。" } },
+        { "title": { "en": "Quality Assurance", "ar": "ضمان الجودة", "zh": "质量保证" }, "description": { "en": "We validate product conformance to international quality standards including ISO certifications, customer specifications, and industry-specific requirements.", "ar": "نتحقق من توافق المنتج مع معايير الجودة الدولية بما في ذلك شهادات ISO ومواصفات العميل والمتطلبات الخاصة بالصناعة.", "zh": "我们验证产品是否符合国际质量标准，包括ISO认证、客户规格和特定行业要求。" } }
+      ]
+    },
+    {
+      "category": { "en": "Logistics & Shipping", "ar": "الشحن واللوجستيات", "zh": "物流与运输" },
+      "items": [
+        { "title": { "en": "Global Shipping", "ar": "الشحن العالمي", "zh": "全球运输" }, "description": { "en": "Comprehensive multimodal shipping solutions including ocean freight, air logistics, expedited delivery, and LCL (less-than-container-load) consolidation services.", "ar": "حلول شحن متعددة الوسائط شاملة تشمل الشحن البحري واللوجستيات الجوية والتسليم السريع وخدمات تجميع الشحنات الجزئية.", "zh": "综合多式联运解决方案，包括海运、空运、快速交付和散货拼箱服务。" } },
+        { "title": { "en": "Customs Handling", "ar": "التخليص الجمركي", "zh": "清关服务" }, "description": { "en": "Expert customs clearance and complete documentation management, ensuring seamless cross-border compliance and minimized clearance delays.", "ar": "تخليص جمركي خبير وإدارة كاملة للوثائق، لضمان الامتثال السلس للحدود والتقليل من تأخيرات التخليص.", "zh": "专业的海关清关和完整的文件管理，确保无缝的跨境合规和最小化的清关延迟。" } }
+      ]
+    },
+    {
+      "category": { "en": "Order Management", "ar": "إدارة الطلبات", "zh": "订单管理" },
+      "items": [
+        { "title": { "en": "Order Tracking", "ar": "تتبع الطلبات", "zh": "订单跟踪" }, "description": { "en": "Comprehensive order visibility from manufacturing initiation through final delivery, with real-time status updates and exception alerts throughout the supply chain.", "ar": "رؤية شاملة للطلبات من بدء التصنيع إلى التسليم النهائي، مع تحديثات الحالة في الوقت الفعلي وتنبيهات الاستثناءات عبر سلسلة التوريد.", "zh": "从制造启动到最终交付的全面订单可见性，具有实时状态更新和整个供应链的异常警报。" } },
+        { "title": { "en": "Inventory Management", "ar": "إدارة المخزون", "zh": "库存管理" }, "description": { "en": "Efficient inventory control and warehouse solutions optimizing your supply chain operations and minimizing carrying costs.", "ar": "مراقبة فعالة على المخزون وحلول المستودعات لتحسين عمليات سلسلة التوريد الخاصة بك وتقليل تكاليف التخزين.", "zh": "高效的库存控制和仓库解决方案，优化您的供应链运营并最小化库存持有成本。" } }
+      ]
+    },
+    {
+      "category": { "en": "Import & Export", "ar": "الاستيراد والتصدير", "zh": "进出口" },
+      "items": [
+        { "title": { "en": "Import Services", "ar": "خدمات الاستيراد", "zh": "进口服务" }, "description": { "en": "Complete import documentation and clearance support.", "ar": "مستندات استيراد كاملة ودعم التخليص.", "zh": "完整的进口文件和清关支持。" } },
+        { "title": { "en": "Export Services", "ar": "خدمات التصدير", "zh": "出口服务" }, "description": { "en": "Export licensing and compliance assistance.", "ar": "تراخيص التصدير ومساعدة الامتثال.", "zh": "出口许可证和合规协助。" } }
+      ]
+    },
+    {
+      "category": { "en": "B2B Trading", "ar": "التجارة B2B", "zh": "B2B贸易" },
+      "items": [
+        { "title": { "en": "Business Matching", "ar": "ربط الشركات", "zh": "商业匹配" }, "description": { "en": "Connecting buyers with trusted manufacturers.", "ar": "ربط المشترين بالمصانع الموثوقة.", "zh": "将买家与可信制造商连接。" } },
+        { "title": { "en": "Trade Mediation", "ar": "الوساطة التجارية", "zh": "贸易中介" }, "description": { "en": "Secure and transparent trade facilitation.", "ar": "تسهيل صفقات تجارية آمنة وشفافة.", "zh": "安全透明的贸易促成服务。" } }
+      ]
+    },
+    {
+      "category": { "en": "Consulting Services", "ar": "الاستشارات", "zh": "咨询服务" },
+      "items": [
+        { "title": { "en": "Market Research", "ar": "دراسة السوق", "zh": "市场调研" }, "description": { "en": "Comprehensive market intelligence covering manufacturing trends, supplier capabilities, pricing dynamics, and competitive landscape analysis across China's industrial sectors.", "ar": "ذكاء سوق شامل يغطي اتجاهات التصنيع وقدرات الموردين وديناميكيات التسعير وتحليل المشهد التنافسي عبر القطاعات الصناعية الصينية.", "zh": "涵盖制造趋势、供应商能力、价格动态和中国工业部门竞争格局分析的全面市场情报。" } },
+        { "title": { "en": "Sourcing Strategy", "ar": "استراتيجية التوريد", "zh": "采购策略" }, "description": { "en": "Customized sourcing strategies for your business.", "ar": "استراتيجيات توريد مخصصة لعملك.", "zh": "为您定制的采购策略。" } }
+      ]
+    },
+    {
+      "category": { "en": "China Market Services", "ar": "خدمات السوق الصيني", "zh": "中国市场服务" },
+      "items": [
+        { "title": { "en": "Factory Visits", "ar": "زيارات المصانع", "zh": "工厂访问" }, "description": { "en": "Arranged factory visits with interpretation.", "ar": "تنظيم زيارات للمصانع مع توفير ترجمة فورية.", "zh": "安排带翻译的工厂访问。" } },
+        { "title": { "en": "Trade Fair Support", "ar": "دعم المعارض", "zh": "展会支持" }, "description": { "en": "Assistance with China trade fairs and exhibitions.", "ar": "مساعدة في المعارض والتجارة الصينية.", "zh": "帮助参加中国贸易展会。" } }
+      ]
+    },
+    {
+      "category": { "en": "Financial Services", "ar": "الخدمات المالية", "zh": "金融服务" },
+      "items": [
+        { "title": { "en": "Payment Solutions", "ar": "حلول الدفع", "zh": "支付解决方案" }, "description": { "en": "Secure payment methods for international trade.", "ar": "طرق دفع آمنة للتجارة الدولية.", "zh": "安全的国际支付方式。" } },
+        { "title": { "en": "Currency Exchange", "ar": "صرف العملات", "zh": "货币兑换" }, "description": { "en": "Competitive FX rates for trade settlements.", "ar": "أسعار تنافسية لتسوية العملات.", "zh": "具有竞争力的汇率。" } }
+      ]
+    },
+    {
+      "category": { "en": "Risk Management", "ar": "إدارة المخاطر", "zh": "风险管理" },
+      "items": [
+        { "title": { "en": "Fraud Protection", "ar": "حماية من الاحتيال", "zh": "防欺诈" }, "description": { "en": "Protect clients from unreliable suppliers and scams.", "ar": "حماية العملاء من الموردين غير الموثوقين ومن عمليات الاحتيال.", "zh": "保护客户免受不可靠供应商和欺诈。" } },
+        { "title": { "en": "Quality Guarantees", "ar": "ضمانات الجودة", "zh": "质量保证" }, "description": { "en": "Escrow services and quality bonds.", "ar": "خدمات الضمان والودائع.", "zh": "托管服务和质量保证金。" } }
+      ]
+    }
+  ]
+}
