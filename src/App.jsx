@@ -10,6 +10,8 @@ import Footer from './components/Footer';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import ThemeSwitcher from './components/ThemeSwitcher';
 import contentData from './data/content.json';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DesignShowcase from './DesignShowcase';
 
 function Navbar() {
   const scrollToSection = (id) => {
@@ -51,7 +53,7 @@ function Navbar() {
   );
 }
 
-function App() {
+function AppMain() {
   const content = contentData.content || contentData;
 
   return (
@@ -72,6 +74,17 @@ function App() {
         </div>
       </LanguageProvider>
     </ThemeProvider>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<AppMain />} />
+        <Route path="/design/:designNumber" element={<DesignShowcase />} />
+      </Routes>
+    </Router>
   );
 }
 
