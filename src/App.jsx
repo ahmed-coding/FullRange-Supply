@@ -2,6 +2,7 @@ import { LanguageProvider } from './context/LanguageContext';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
+import ManufacturingCities from './components/ManufacturingCities';
 import Process from './components/Process';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -27,6 +28,9 @@ function Navbar() {
               </button>
               <button onClick={() => scrollToSection('about')} className="text-slate-300 hover:text-white transition-colors text-sm">
                 About
+              </button>
+              <button onClick={() => scrollToSection('cities')} className="text-slate-300 hover:text-white transition-colors text-sm">
+                Cities
               </button>
               <button onClick={() => scrollToSection('process')} className="text-slate-300 hover:text-white transition-colors text-sm">
                 Process
@@ -56,6 +60,7 @@ function App() {
           <Hero content={content} />
           <Services content={content} />
           <About content={content} />
+          <ManufacturingCities content={content} />
           <Process content={content} />
           <Contact content={content} />
         </main>
