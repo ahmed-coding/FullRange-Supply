@@ -20,7 +20,7 @@ function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-8">
             <a href="#" className="text-white font-bold text-xl">
-              AMZ<span className="text-[#d4af37]">.</span>
+              FullRange<span className="text-[#d4af37]">.</span>
             </a>
             <div className="hidden md:flex items-center gap-6">
               <button onClick={() => scrollToSection('services')} className="text-slate-300 hover:text-white transition-colors text-sm">

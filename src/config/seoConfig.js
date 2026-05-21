@@ -1,11 +1,11 @@
 /**
- * SEO Configuration for AMZ Global Sourcing
+ * SEO Configuration for FullRange Supply
  * This file provides metadata and SEO strategies for the website
  */
 
 export const seoConfig = {
   // Base URL - UPDATE THIS with your production domain
-  baseUrl: 'https://amzglobalsourcing.com',
+  baseUrl: 'https://full-range-supply.vercel.app',
 
   // Languages supported (hreflang)
   languages: {
@@ -16,11 +16,11 @@ export const seoConfig = {
 
   // Organization metadata
   organization: {
-    name: 'AMZ Global Sourcing',
-    alternateNames: ['FullRange Supply', 'AMZ Sourcing'],
+    name: 'FullRange Supply',
+    alternateNames: ['FullRange Supply Co.', 'FRS Trading'],
     description: 'Professional China sourcing and trading office providing comprehensive solutions for global buyers seeking verified manufacturers.',
-    url: 'https://amzglobalsourcing.com',
-    logo: 'https://amzglobalsourcing.com/logo.png',
+    url: 'https://full-range-supply.vercel.app',
+    logo: 'https://full-range-supply.vercel.app/logo.png',
     email: 'ahmedhamzah171@gmail.com',
     phone: '+86 156 0871 4980',
     location: {
@@ -32,11 +32,11 @@ export const seoConfig = {
   // Page-level metadata
   pages: {
     home: {
-      title: 'AMZ Global Sourcing | China Trading & Sourcing Office - Verified Suppliers',
+      title: 'FullRange Supply | China Trading & Sourcing Office - Verified Suppliers',
       description: 'Connect with verified China factories, negotiate deals, ensure quality control, and manage international logistics. Professional B2B sourcing partner.',
       keywords: 'China sourcing, supplier sourcing, factory finder, quality control, international logistics, B2B trading, import export',
-      canonicalUrl: 'https://amzglobalsourcing.com/',
-      ogImage: 'https://amzglobalsourcing.com/og-image.png'
+      canonicalUrl: 'https://full-range-supply.vercel.app/',
+      ogImage: 'https://full-range-supply.vercel.app/og-image.png'
     }
   },
 
@@ -119,10 +119,10 @@ export const seoConfig = {
 
   // Social signals optimization
   social: {
-    twitterHandle: '@amzglobalsourcing',
-    linkedinProfile: 'https://www.linkedin.com/company/amz-global-sourcing',
-    facebookPage: 'https://www.facebook.com/amzglobalsourcing',
-    instagramProfile: 'https://www.instagram.com/amzglobalsourcing'
+    twitterHandle: '@fullrangesupply',
+    linkedinProfile: 'https://www.linkedin.com/company/fullrange-supply',
+    facebookPage: 'https://www.facebook.com/fullrangesupply',
+    instagramProfile: 'https://www.instagram.com/fullrangesupply'
   },
 
   // Schema markup types to implement
@@ -149,8 +149,8 @@ export const seoConfig = {
 
   // Crawlability & Indexability
   crawling: {
-    sitemap: 'https://amzglobalsourcing.com/sitemap.xml',
-    robotsTxt: 'https://amzglobalsourcing.com/robots.txt',
+    sitemap: 'https://full-range-supply.vercel.app/sitemap.xml',
+    robotsTxt: 'https://full-range-supply.vercel.app/robots.txt',
     allowedCrawlers: ['Googlebot', 'Bingbot', 'Slurp', 'DuckDuckBot', 'Baiduspider'],
     crawlDelay: 1
   }

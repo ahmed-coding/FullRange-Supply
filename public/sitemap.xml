@@ -6,42 +6,42 @@
 
   <!-- Homepage (all language versions) -->
   <url>
-    <loc>https://amzglobalsourcing.com/</loc>
+    <loc>https://full-range-supply.vercel.app/</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <mobile:mobile/>
     <!-- Language variants -->
-    <xhtml:link rel="alternate" hreflang="en" href="https://amzglobalsourcing.com/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://amzglobalsourcing.com/?lang=ar"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://amzglobalsourcing.com/?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://amzglobalsourcing.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://full-range-supply.vercel.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://full-range-supply.vercel.app/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://full-range-supply.vercel.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://full-range-supply.vercel.app/"/>
   </url>
 
   <!-- Section pages (treated as anchors for now, can be expanded) -->
   <url>
-    <loc>https://amzglobalsourcing.com/#services</loc>
+    <loc>https://full-range-supply.vercel.app/#services</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://amzglobalsourcing.com/#about</loc>
+    <loc>https://full-range-supply.vercel.app/#about</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://amzglobalsourcing.com/#process</loc>
+    <loc>https://full-range-supply.vercel.app/#process</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://amzglobalsourcing.com/#contact</loc>
+    <loc>https://full-range-supply.vercel.app/#contact</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

@@ -1,17 +1,24 @@
-# AMZ Global Sourcing - robots.txt
-# Allow all search engines to crawl the website
+# FullRange Supply - robots.txt
+# Optimize crawl budget and guide search engines
 
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
+Disallow: /api/
+Disallow: /.next/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Crawl delay to avoid excessive server load
+Crawl-delay: 1
 
 # Allow specific crawlers for better indexing
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
@@ -19,8 +26,14 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# Sitemap location
-Sitemap: https://amzglobalsourcing.com/sitemap.xml
+User-agent: Baiduspider
+Allow: /
 
-# Crawl delay to be respectful
-Crawl-delay: 1
+# Sitemap location
+Sitemap: https://full-range-supply.vercel.app/sitemap.xml
+
+# Block bad bots that waste crawl budget
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: MJ12bot
+Disallow: /
