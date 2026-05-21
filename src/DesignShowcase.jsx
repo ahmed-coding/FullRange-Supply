@@ -1,4 +1,6 @@
 import { useParams } from 'react-router-dom';
+import { LanguageProvider } from './context/LanguageContext';
+import { ThemeProvider } from './context/ThemeContext';
 import Design1 from './designs/Design1';
 import Design2 from './designs/Design2';
 import Design3 from './designs/Design3';
@@ -40,22 +42,26 @@ export default function DesignShowcase() {
   const DesignComponent = designs[index];
 
   return (
-    <div>
-      <div className="fixed top-4 left-4 z-50 bg-black bg-opacity-70 text-white p-4 rounded-lg">
-        <p className="text-sm font-bold mb-2">Design #{index + 1}: {designNames[index]}</p>
-        <div className="flex gap-2 flex-wrap">
-          {designNames.map((name, i) => (
-            <a
-              key={i}
-              href={`/design/${i + 1}`}
-              className={`px-3 py-1 rounded text-xs ${index === i ? 'bg-blue-600' : 'bg-gray-700 hover:bg-gray-600'} transition-colors`}
-            >
-              {i + 1}
-            </a>
-          ))}
+    <ThemeProvider initialTheme="luxury-minimal">
+      <LanguageProvider>
+        <div>
+          <div className="fixed top-4 left-4 z-50 bg-black bg-opacity-70 text-white p-4 rounded-lg">
+            <p className="text-sm font-bold mb-2">Design #{index + 1}: {designNames[index]}</p>
+            <div className="flex gap-2 flex-wrap">
+              {designNames.map((name, i) => (
+                <a
+                  key={i}
+                  href={`/design/${i + 1}`}
+                  className={`px-3 py-1 rounded text-xs ${index === i ? 'bg-blue-600' : 'bg-gray-700 hover:bg-gray-600'} transition-colors`}
+                >
+                  {i + 1}
+                </a>
+              ))}
+            </div>
+          </div>
+          <DesignComponent />
         </div>
-      </div>
-      <DesignComponent />
-    </div>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 }
