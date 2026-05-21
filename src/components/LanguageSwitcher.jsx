@@ -9,6 +9,10 @@ export default function LanguageSwitcher() {
 
   const handleSelect = (langCode) => {
     setActiveLang(langCode);
+    // Update URL parameter
+    const params = new URLSearchParams(window.location.search);
+    params.set('lang', langCode);
+    window.history.pushState({}, '', `${window.location.pathname}?${params.toString()}`);
     setIsOpen(false);
   };
 

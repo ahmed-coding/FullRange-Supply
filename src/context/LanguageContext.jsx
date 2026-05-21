@@ -8,13 +8,45 @@ export const languages = [
   { code: 'zh', name: '中文', dir: 'ltr' }
 ];
 
-export function LanguageProvider({ children }) {
-  const [activeLang, setActiveLang] = useState('en');
+const validLanguages = ['en', 'ar', 'zh'];
 
+// Get initial language from URL or localStorage
+const getInitialLanguage = () => {
+  const params = new URLSearchParams(window.location.search);
+  const urlLang = params.get('lang');
+
+  if (urlLang && validLanguages.includes(urlLang)) {
+    return urlLang;
+  }
+
+  const saved = localStorage.getItem('preferredLanguage');
+  if (saved && validLanguages.includes(saved)) {
+    return saved;
+  }
+
+  return 'en';
+};
+
+export function LanguageProvider({ children }) {
+  const [activeLang, setActiveLang] = useState(getInitialLanguage());
+  const [isInitialized, setIsInitialized] = useState(false);
+
+  // Set up DOM attributes on mount
   useEffect(() => {
     document.documentElement.dir = activeLang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = activeLang;
-  }, [activeLang]);
+    setIsInitialized(true);
+  }, []);
+
+  // Update URL and localStorage when language changes (but not on mount)
+  useEffect(() => {
+    if (!isInitialized) return;
+
+    const params = new URLSearchParams(window.location.search);
+    params.set('lang', activeLang);
+    window.history.replaceState({}, '', `${window.location.pathname}?${params.toString()}`);
+    localStorage.setItem('preferredLanguage', activeLang);
+  }, [activeLang, isInitialized]);
 
   const t = (obj) => {
     if (!obj) return '';
